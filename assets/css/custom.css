@@ -6,8 +6,9 @@
   --clr-primary: #053C5C;
   --clr-accent: #CC8C80;
   --clr-secondary: #0869A0;
-  --clr-grey: #C5B7B7;
+  --clr-grey: #8C8C8C;
   --clr-white: #ffffff;
+  --clr-white-300: #F8F9FA;
   --clr-white-600: #fcfcfc;
   --clr-black: #1E1E1E;
 
@@ -74,8 +75,8 @@ body {
 
 p {
   margin-bottom: 0;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 26px;
+  line-height: 1.4;
 }
 
 h1,
@@ -139,18 +140,20 @@ section[class^="aul__"] {
 }
 
 /* Theme Classes */
-.abin__bg-light {
-  background-color: #F9F9F9;
+.aul__bg-light {
+  background-color: var(--clr-white-300);
 }
-
-.abin__bg-grey {
+.aul__bg-grey {
   background-color: var(--clr-grey);
   color: #6A6A6A;
 }
-
-.abin__bg-dark {
+.aul__bg-dark {
   background-color: var(--clr-black);
   color: var(--clr-white);
+}
+.aul__text-white  {
+  color: var(--clr-white);
+  --bs-heading-color: var(--clr-white);
 }
 
 .aul__texture__bg::before {
@@ -226,69 +229,41 @@ section[class^="aul__"] {
   background-color: var(--clr-black);
 }
 
-
-.aul__btn__small {
-  padding: 10px 17px;
-  letter-spacing: 1.5px;
-  font-size: 12px;
-}
-
-.aul__btn__link {
-  background: transparent !important;
-  padding: 0 0 4px !important;
-  font-size: 15px;
-  color: #1e1e1e;
-  font-weight: 600;
-}
-
-.aul__btn__link::before {
-  position: absolute;
-  content: '';
-  width: 24px;
-  height: 2px;
-  background-color: var(--clr-blue);
-  bottom: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.aul__btn__link:hover::before {
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.aul__btn__wrap {
-  margin-top: 24px;
-}
-
-.abin__heading {
+.aul__heading {
   position: relative;
   margin-bottom: 32px;
   --bs-heading-color: var(--clr-black);
 }
-
-.abin__heading h2 {
-  font-size: 100px;
-  line-height: 1.4;
+.aul__heading-center > * {
+  text-align: center;
 }
 
-.abin__heading h3 {
+h2 {
+  font-size: 60px;
+  line-height: 1.4;
+}
+.aul__heading h2 span {
+  color: var(--clr-grey);
+}
+
+.aul__heading h3 {
   font-weight: 500;
   font-size: 50px;
   line-height: 1.4;
 }
 
-.abin__heading h4 {
+.aul__heading h4 {
   font-size: 30px;
   line-height: 1.4;
 }
 
-.abin__heading h5,
+.aul__heading h5,
 h5 {
   font-size: 25px;
   line-height: 1.4;
 }
 
-.abin__heading h6 {
+.aul__heading h6 {
   color: #8c8c8c;
   font-size: 13px;
   line-height: 1.1em;
@@ -298,7 +273,7 @@ h5 {
   font-family: var(--ff-body);
 }
 
-.abin__heading-white {
+.aul__heading-white {
   --bs-heading-color: var(--clr-white) !important;
 }
 
@@ -482,6 +457,82 @@ textarea.form-control {
 }
 /** ----------------------------
 *      Section: Hero End
+**  --------------------------*/
+/** ----------------------------
+*      Section: Path Start
+**  --------------------------*/
+.aul__path-single {
+  background-color: var(--clr-secondary);
+  padding: 60px 50px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+.aul__path-single::before {
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-left: 30px solid var(--clr-white);
+  border-bottom: 35px solid transparent;
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.aul__path-single::after {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 35px solid var(--clr-secondary);
+  border-bottom: 40px solid transparent;
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.aul__path-wrap [class^="col-"]:nth-child(1) .aul__path-single::before {
+  display: none;
+}
+.aul__path-wrap [class^="col-"]:nth-child(3) .aul__path-single::after {
+  display: none;
+}
+.aul__path-step {
+  background-color: var(--clr-white);
+  --bs-heading-color: var(--clr-primary);
+  width: fit-content;
+  margin: 0 auto 25px;
+  padding: 9px 37px;
+  border-radius: 50px;
+}
+.aul__path-step h6 {
+  font-size: 26px;
+  font-family: var(--ff-body);
+  /*! font-weight: 500; */
+}
+.aul__path-title {
+  --bs-heading-color: #E6DBC9;
+  margin-bottom: 15px;
+}
+.aul__path-title h5 {
+  font-size: 30px;
+  font-family: var(--ff-body);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.aul__connect-wrap > :not(:last-child) {
+  margin-bottom: 30px;
+}
+.aul__connect-wrap {
+  padding: 0 inherit;
+  padding-inline: 65px;
+}
+
+/** ----------------------------
+*      Section: Path End
 **  --------------------------*/
 
 
