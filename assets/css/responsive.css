@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 1600px) and (max-width: 1500px) {}
+
+/* <1600px */
+@media (max-width: 1599.98px) {
+  .container {max-width: 1560px;}
+}
+/* <1500px */
+@media (max-width: 1499.98px) {
+  .container {max-width: 1440px;}
+}
+/* XL: <1400px */
+@media (max-width: 1399.98px) {
+    .container {max-width: 1320px;}
+}
+
+@media only screen and (min-width: 991.98px) {}
+
+@media only screen and (max-width: 991.98px) {
+ 
+}
+
+@media (max-width: 767.98px) {
+ 
+}
+
+@media (max-width: 575.98px) {
+  
+}
