@@ -11,6 +11,8 @@
   --clr-white-300: #F8F9FA;
   --clr-white-600: #fcfcfc;
   --clr-black: #1E1E1E;
+  --clr-black-200: #111111;
+  --clr-text: #979797;
 
   --ff-primary: "Varela Round", sans-serif;
   --ff-body: "Albert Sans", sans-serif;
@@ -131,6 +133,11 @@ svg {
   z-index: -1;
 }
 
+.aul__img img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 /* .aul__bgVideo video {
 
 } */
@@ -143,15 +150,18 @@ section[class^="aul__"] {
 .aul__bg-light {
   background-color: var(--clr-white-300);
 }
+
 .aul__bg-grey {
   background-color: var(--clr-grey);
   color: #6A6A6A;
 }
+
 .aul__bg-dark {
   background-color: var(--clr-black);
   color: var(--clr-white);
 }
-.aul__text-white  {
+
+.aul__text-white {
   color: var(--clr-white);
   --bs-heading-color: var(--clr-white);
 }
@@ -210,6 +220,7 @@ section[class^="aul__"] {
   transform-origin: top right;
   transition: transform .35s ease-out;
 }
+
 .aul__btn-hover-white::before {
   background-color: var(--clr-white);
 }
@@ -234,7 +245,8 @@ section[class^="aul__"] {
   margin-bottom: 32px;
   --bs-heading-color: var(--clr-black);
 }
-.aul__heading-center > * {
+
+.aul__heading-center>* {
   text-align: center;
 }
 
@@ -242,6 +254,7 @@ h2 {
   font-size: 60px;
   line-height: 1.4;
 }
+
 .aul__heading h2 span {
   color: var(--clr-grey);
 }
@@ -409,10 +422,12 @@ textarea.form-control {
 .aul__header-right {
   gap: 32px;
 }
+
 .aul__header .navbar-toggler {
   --bs-navbar-toggler-padding-y: 0;
   --bs-navbar-toggler-padding-x: 0;
 }
+
 .aul__header .navbar-toggler .icon-bar {
   display: block;
   width: 34px;
@@ -420,9 +435,30 @@ textarea.form-control {
   background-color: var(--clr-white);
   border-radius: 50px;
 }
-.aul__header .navbar-toggler .icon-bar + .icon-bar {
+
+.aul__header .navbar-toggler .icon-bar+.icon-bar {
   margin-top: 6px;
 }
+
+.aul__header .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.aul__header .navbar-toggler {
+  border: none;
+}
+
+.aul__header .btn-close:focus {
+  box-shadow: none;
+}
+
+.aul__header .navbar-nav .nav-item:hover a {
+  color: var(--clr-accent);
+  transition: .3s all ease-in-out;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 /** ----------------------------
 *      Section: Header End
 **  --------------------------*/
@@ -434,27 +470,34 @@ textarea.form-control {
   display: flex;
   align-items: flex-end;
 }
+
 .aul__hero-wrap {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgb(255 255 255) 62%);
   backdrop-filter: blur(4px);
   padding: 58px 45px;
   text-align: center;
   border-radius: 20px;
-  margin-bottom: -70px;
+  /* margin-bottom: -70px; */
+  margin-bottom: -40px;
+
 }
+
 .aul__hero-wrap h1 {
   color: var(--clr-primary);
   font-size: 65px;
   margin-bottom: 20px;
 }
+
 .aul__hero-wrap h1 span {
   display: block;
   color: var(--clr-secondary);
   font-size: 52px;
 }
+
 .aul__hero-wrap .aul__btn {
   margin-bottom: 16px;
 }
+
 /** ----------------------------
 *      Section: Hero End
 **  --------------------------*/
@@ -468,6 +511,7 @@ textarea.form-control {
   text-align: center;
   position: relative;
 }
+
 .aul__path-single::before {
   width: 0;
   height: 0;
@@ -480,6 +524,7 @@ textarea.form-control {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .aul__path-single::after {
   width: 0;
   height: 0;
@@ -497,9 +542,11 @@ textarea.form-control {
 .aul__path-wrap [class^="col-"]:nth-child(1) .aul__path-single::before {
   display: none;
 }
+
 .aul__path-wrap [class^="col-"]:nth-child(3) .aul__path-single::after {
   display: none;
 }
+
 .aul__path-step {
   background-color: var(--clr-white);
   --bs-heading-color: var(--clr-primary);
@@ -508,24 +555,29 @@ textarea.form-control {
   padding: 9px 37px;
   border-radius: 50px;
 }
+
 .aul__path-step h6 {
   font-size: 26px;
   font-family: var(--ff-body);
   /*! font-weight: 500; */
 }
+
 .aul__path-title {
   --bs-heading-color: #E6DBC9;
   margin-bottom: 15px;
 }
+
 .aul__path-title h5 {
   font-size: 30px;
   font-family: var(--ff-body);
   font-weight: 600;
   letter-spacing: 0.4px;
 }
-.aul__connect-wrap > :not(:last-child) {
+
+.aul__connect-wrap> :not(:last-child) {
   margin-bottom: 30px;
 }
+
 .aul__connect-wrap {
   padding: 0 inherit;
   padding-inline: 65px;
@@ -534,6 +586,201 @@ textarea.form-control {
 /** ----------------------------
 *      Section: Path End
 **  --------------------------*/
+/** ----------------------------
+*      Section: Faq  START
+**  --------------------------*/
+.aul__faq-wrap .accordion-item {
+  margin-bottom: 15px;
+  padding: 15px 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+  box-shadow: 0px 70px 20px 0px #0000;
+}
+
+.aul__faq-wrap .accordion-item button.accordion-button {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: var(--clr-black-200);
+  box-shadow: none;
+  border: none;
+  padding: 25px;
+}
+
+.aul__faq-wrap .accordion-item .accordion-button:not(.collapsed) {
+  color: var(--clr-black-200);
+  background-color: transparent;
+}
+
+.aul__faq-wrap .accordion>.accordion-item {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: -1px 2px 8px 1px #79797940;
+}
+
+.aul__faq-wrap .accordion>.accordion-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.aul__faq-wrap .accordion-item .accordion-body {
+  padding: 0px 25px 30px 25px;
+}
+
+.accordion-body .aul__content p {
+  font-family: var(--ff-body);
+  font-weight: 400;
+  text-align: left;
+  color: var(--clr-text);
+  padding-bottom: 12px;
+}
+
+.accordion-body .aul__content p:last-child {
+  padding-bottom: 0;
+}
+
+.aul__faq-wrap .accordion-button::before,
+.accordion-button:not(.collapsed)::before {
+  background: none;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\2b";
+  font-size: 28px;
+  padding-right: 15px;
+}
+
+.aul__faq-wrap .accordion-button:not(.collapsed)::before {
+  content: "\f068";
+  transform: none;
+  font-size: 28px;
+}
+
+.aul__faq-wrap .accordion-button::after {
+  display: none;
+}
+
+/** ----------------------------
+*      Section: Faq End
+**  --------------------------*/
+/** ----------------------------
+*      Section: request start
+**  --------------------------*/
+
+.aul__request-top-box .aul__heading {
+  margin-bottom: 0;
+}
+
+.aul__request-top-box .aul__heading h2 {
+  color: var(--clr-white);
+}
+
+.aul__request-top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-secondary);
+  padding: 30px 40px 30px 70px;
+  border-radius: 100px;
+  margin-bottom: 35px;
+}
+
+/** ----------------------------
+*      Section: request End
+**  --------------------------*/
+/** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ HOMEPAGE START =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
+/** ----------------------------
+*      Section: footer start
+**  --------------------------*/
+.aul__footer {
+  background-color: var(--clr-primary);
+  width: 100%;
+}
+
+.aul__footer-top {
+  margin-bottom: 35px;
+  border-bottom: 2px solid var(--clr-secondary);
+  padding-bottom: 20px;
+}
 
 
+.aul__generic-content {
+  padding-top: 35px;
+  position: relative;
+}
+.aul__generic-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.aul__generic-content h6 {
+  color: var(--clr-white);
+  font-size: 28px;
+  /* margin-top: 16px; */
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+.aul__generic-content h6:first-child {
+  margin-top: 0;
+}
+
+.aul__footer-menu {
+  position: relative;
+}
+
+.aul__footer-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.aul__footer-menu ul li+li {
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid #fefefe;
+}
+
+.aul__footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.aul__footer-menu ul li a {
+  color: var(--clr-white);
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--ff-body);
+  margin-left: 5px;
+}
+
+.aul__footer-menu ul li:hover a {
+  color: var(--clr-accent);
+  transition: .4s all ease-in-out;
+}
+
+.aul__footer-powered-logo {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.aul__request-wrapper .aul__content p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.aul__generic-content a {
+  color: var(--clr-accent);
+}
+
+::selection {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+}
+
+/** ----------------------------
+*      Section: Footer End
+**  --------------------------*/
 /** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ HOMEPAGE START =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
