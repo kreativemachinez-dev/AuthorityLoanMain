@@ -784,3 +784,39 @@ textarea.form-control {
 *      Section: Footer End
 **  --------------------------*/
 /** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ HOMEPAGE START =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
+
+
+/** ----------------------------
+*     Section: Form Start
+**  --------------------------*/
+main {
+  background-image: linear-gradient(to bottom, #E8E8E8 0%, #ffffff80 100%);
+}
+.aul__progress-line {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.aul__progress-num {
+  width: 20px;
+  height: 20px;
+  color: var(--clr-secondary);
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-family: var(--ff-body);
+}
+.aul__progress-line .progress {
+  flex: 0 0 auto;
+  width: 97%;
+  --bs-progress-height: 10px;
+  box-shadow: 0px 4px 10px 0 #F2F2F2, 0px 8px 20px 0 #0000000f;
+  background-image: linear-gradient(to right, #fff 0%, #ffffff63 70%);
+}
+/** ----------------------------
+*     Section: Form End
+**  --------------------------*/
