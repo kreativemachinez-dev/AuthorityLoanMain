@@ -137,14 +137,13 @@ h2 { font-size: 35px; line-height: 45px; }
 .aul__header .navbar-toggler .icon-bar { width: 28px; height: 3px; }
 .aul__header .navbar-brand img { width: 90px;}
 .aul__btn { font-size: 13px; min-height: 40px; padding-inline: 20px;}
-
 /* .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 20px solid var(--clr-white); border-bottom: 25px solid transparent;}
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 25px solid var(--clr-secondary);} */
 }
 @media (min-width: 992px) and (max-width: 1023px) {
-  .aul__footer-menu ul li a { font-size: 12px;}
-  .aul__connect-wrap { padding-inline: 20px; }
- 
+.aul__footer-menu ul li a { font-size: 12px;}
+.aul__connect-wrap { padding-inline: 20px; }
+
 }
 @media only screen and (min-width: 991.98px) {}
 
@@ -174,7 +173,7 @@ h2 { font-size: 28px;  line-height: 40px; }
 .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 25px solid var(--clr-white); border-bottom: 25px solid transparent;}
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 30px solid var(--clr-secondary); border-bottom: 30px solid transparent;}
 .aul__path-desc p {  width: 100%;}
-.aul__hero-wrap { padding: 30px 35px; margin-bottom: -45px;}
+.aul__hero-wrap { padding: 30px 35px; margin-bottom: -45px ;}
 }
 
 @media (max-width: 767.98px) {
