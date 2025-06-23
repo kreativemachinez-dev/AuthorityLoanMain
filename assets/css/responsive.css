@@ -6,7 +6,6 @@
 .aul__hero-main { min-height: calc(105vh - 150px);}
 p {  font-size: 18px; line-height: 28px;}
 h2 { font-size: 50px;}
-.aul__connect-wrap .aul__heading h2 { width: 77%; margin: 0 auto; }
 .aul__generic-content h6 { font-size: 24px; line-height: 34px;}
 .aul__faq-wrap .accordion > .accordion-item:not(:last-child) { margin-bottom: 20px;}
 .aul__faq-wrap .accordion-item button.accordion-button { font-size: 25px;  line-height: 35px;  padding: 15px;}
@@ -21,7 +20,8 @@ h2 { font-size: 50px;}
 .aul__path-step {margin: 0 auto 20px;}
 .aul__path-title h5 {  font-size: 25px;}
 .aul__path-title { margin-bottom: 10px;}
-.aul__path-wrap .aul__path-desc p {  width: 80%;  margin: 0 auto;}
+.aul__path-wrap .aul__path-desc p { width: 65%;  margin: 0 auto;}
+.aul__path-single { padding: 50px 40px;}
 .aul__request-wrapper .aul__content p { width: 52%;}
 .aul__generic-content h6 {  font-size: 20px;  line-height: 30px; margin: 15px 0;}
 .aul__generic-content p { font-size: 16px; line-height: 26px;}
@@ -30,6 +30,7 @@ h2 { font-size: 50px;}
 .aul__heading { margin-bottom: 25px;}
 .aul__footer-menu ul li a { font-size: 16px; line-height: 0;}
 .aul__footer-menu ul li + li { margin-left: 20px;  padding-left: 20px;}
+.aul__connect-wrap { padding-inline: 75px;}
 }
 @media (max-width: 1700px) and (min-width: 1600px){
 .aul__hero-main { min-height: calc(105vh - 150px);}
@@ -42,14 +43,12 @@ h2 { font-size: 50px;}
 .aul__generic-content h6 {  font-size: 20px;  line-height: 30px; margin: 15px 0;}
 .aul__footer-powered-logo img{width: 250px;  object-fit: contain;  height: 100%;}
 
-
 }
 @media (max-width: 1600px) and (min-width: 1500px){
 .aul__footer-menu ul {gap: 15px 7px;}
 .aul__hero-main { min-height: calc(112vh - 150px);}
 .aul__hero-wrap {padding: 45px 35px;}
-
-
+.aul__connect-wrap {  padding-inline: 115px !important;}
 }
 @media (min-width: 1400px) and (max-width: 1500px){
 }
@@ -58,13 +57,13 @@ h2 { font-size: 50px;}
 @media (max-width: 1599.98px) {
 .aul__hero-main { min-height: calc(100vh - 120px);}
 .aul__hero-wrap {padding: 35px 35px; margin-bottom: -60px;}
+.aul__connect-wrap { padding-inline: 75px;}
 .container {max-width: 1560px;}
 p{font-size: 16px;  line-height: 26px;}
 h2 {  font-size: 35px;  line-height: 45px; }
 .aul__hero-wrap h1 {  font-size: 40px; margin-bottom: 15px }
 .aul__hero-wrap h1 span {font-size: 32px;}
 .aul__request-top-box .aul__heading h2 { font-size: 35px;  line-height: 45px;}
-.aul__connect-wrap .aul__heading h2 { width: 68%;  margin: 0 auto;}
 .aul__path-step h6 {  font-size: 18px;}
 .aul__path-title h5 { font-size: 22px;}
 .aul__path-title { margin-bottom: 10px;}
@@ -81,20 +80,21 @@ h2 {  font-size: 35px;  line-height: 45px; }
 .aul__footer-logo img{ width: 120px; object-fit: contain; height: 100%;}
 .aul__footer-powered-logo img{width: 200px;  object-fit: contain;  height: 100%;}
 .aul__faq-wrap .accordion-item button.accordion-button {  font-size: 18px;  line-height: 28px; }
+.aul__path-single { padding: 45px 25px; border-radius: 18px;}
+.aul__path-desc p { width: 60%;}
 }
 /* <1500px */
 @media (max-width: 1499.98px) {
-.aul__connect-wrap .aul__heading h2 { width: 70%; }
 .aul__hero-main { min-height: calc(109vh - 120px);}
 .container {max-width: 1440px;}
 .aul__faq-wrap .accordion-button::before, .accordion-button:not(.collapsed)::before { font-size: 24px ;}
 .aul__request-top-box {  padding: 20px 40px 20px 60px;}
+.aul__path-desc p {  width: 70%;}
 }
 /* XL: <1400px */
 @media (max-width: 1399.98px) {
 .container {max-width: 1320px;}
 p {  font-size: 16px;  line-height: 26px;}
-.aul__request-wrapper .aul__content p { width: 60%;}
 .aul__request-top-box {  padding: 15px 40px 15px 60px;}
 .aul__faq-wrap .accordion-button::before, .accordion-button:not(.collapsed)::before { font-size: 18px !important; padding-right: 6px;}
 .aul__faq-wrap .accordion-item button.accordion-button{padding: 8px 15px;}
@@ -104,6 +104,8 @@ p {  font-size: 16px;  line-height: 26px;}
 .aul__footer-menu ul li a {  font-size: 13px;  line-height: 0;}
 .aul__footer-menu ul li + li {  margin-left: 15px;  padding-left: 15px;}
 .aul__hero-main { min-height: calc(100vh - 120px);}
+.aul__path-desc p { width: 75%;}
+.aul__connect-wrap {  padding-inline: 65px;}
 
 /* .aul__hero-main {  min-height: calc(81vh - 150px); } */
 }
@@ -119,11 +121,9 @@ h2 {  font-size: 35px;  line-height: 45px;}
 .aul__path-title h5 {font-size: 22px;  line-height: 32px;}
 .aul__path-step h6 { font-size: 18px;}
 .aul__path-step { margin: 0 auto 20px;}
-.aul__connect-wrap .aul__heading h2 {  width: 80%;}
-.aul__request-wrapper .aul__content p { width: 66%;}
 .aul__hero-main { min-height: calc(80vh - 140px);}
-
-
+.aul__path-desc p {  width: 100%;}
+.aul__connect-wrap { padding-inline: 25px;}
 
 }
 @media (max-width: 1199.98px) {
@@ -131,21 +131,19 @@ p { font-size: 15px; line-height: 25px; }
 h2 { font-size: 35px; line-height: 45px; }
 .aul__path-title { margin-bottom: 10px;}
 .aul__path-single { padding: 50px 40px;}
-.aul__request-wrapper .aul__content p { width: 80%;}
 .aul__footer-menu ul li a {font-size: 12px;  margin-left: 4px;}
 .aul__footer-menu ul li + li {  margin-left: 6px;  padding-left: 6px;}
 .aul__request-top-box .aul__heading h2 {  font-size: 30px;  line-height: 40px;}
 .aul__header .navbar-toggler .icon-bar { width: 28px; height: 3px; }
 .aul__header .navbar-brand img { width: 90px;}
 .aul__btn { font-size: 13px; min-height: 40px; padding-inline: 20px;}
-.aul__connect-wrap .aul__heading h2 { width: 100%;}
 
 /* .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 20px solid var(--clr-white); border-bottom: 25px solid transparent;}
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 25px solid var(--clr-secondary);} */
 }
 @media (min-width: 992px) and (max-width: 1023px) {
-  .aul__request-wrapper .aul__content p { width: 80%;}
   .aul__footer-menu ul li a { font-size: 12px;}
+  .aul__connect-wrap { padding-inline: 20px; }
  
 }
 @media only screen and (min-width: 991.98px) {}
@@ -153,15 +151,14 @@ h2 { font-size: 35px; line-height: 45px; }
 @media only screen and (max-width: 991.98px) {
 .custom-pad { padding: 50px 0;}
 p { font-size: 14px; line-height: 24px;}
-h2 { font-size: 30px;  line-height: 40px; }
+h2 { font-size: 28px;  line-height: 40px; }
 .aul__path-single { padding: 40px 25px;}
 .aul__path-title h5 {font-size: 18px;line-height: 28px;}
 .aul__path-step h6 { font-size: 16px;}
 .aul__path-step {  margin: 0 auto 15px;}
-.aul__request-top-box {  padding: 15px 20px 15px 40px; }
+.aul__request-top-box {  padding: 15px 20px 15px 40px;}
 .aul__request-top-box .aul__heading h2 {  font-size: 25px;  line-height: 35px;}
 .aul__request-top-box { margin-bottom: 15px;}
-.aul__request-wrapper .aul__content p { width: 100%;}
 .aul__btn { font-size: 13px; min-height: 40px;  padding-inline: 20px; }
 .aul__connect-wrap { padding-inline: 0;}
 .aul__connect-right{display: none;}
@@ -176,6 +173,8 @@ h2 { font-size: 30px;  line-height: 40px; }
 .aul__path-desc p {  min-height: 75px;}
 .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 25px solid var(--clr-white); border-bottom: 25px solid transparent;}
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 30px solid var(--clr-secondary); border-bottom: 30px solid transparent;}
+.aul__path-desc p {  width: 100%;}
+.aul__hero-wrap { padding: 30px 35px; margin-bottom: -45px;}
 }
 
 @media (max-width: 767.98px) {
@@ -196,7 +195,7 @@ h2 { font-size: 26px; line-height: 36px;}
 .aul__hero-wrap h1 { font-size: 28px;}
 .aul__hero-wrap h1 span { font-size: 24px;}
 .aul__hero-main {min-height: calc(65vh - 150px);}
-.aul__hero-wrap {  border-radius: 20px 20px 0 0; margin-bottom: 0;}
+.aul__hero-wrap {  border-radius: 20px 20px 0 0; margin-bottom: -40px;}
 .aul__header .navbar-brand img {width: 80px;}
 }
 @media (max-width: 575.98px) {
@@ -212,7 +211,8 @@ h2 {  font-size: 22px;  line-height: 32px; }
 .aul__footer-menu ul li+li {margin-left: 0; padding-left: 0;border:none;}
 .aul__footer-menu ul li a { font-size: 14px;line-height: 24px; text-decoration: underline;}
 .aul__footer-menu ul li { margin-bottom: 4px;}
-.aul__hero-wrap {  padding: 45px 25px;}
+.aul__hero-main { min-height: calc(77vh - 150px);}
+.aul__hero-wrap {  padding: 25px 25px;}
 .aul__hero-wrap h1 { font-size: 26px;}
 .aul__hero-wrap h1 span {font-size: 21px;}
 .aul__header .aul__header-btn .aul__btn {  font-size: 12px;  min-height: 35px;  padding-inline: 15px;}
