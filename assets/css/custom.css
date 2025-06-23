@@ -250,7 +250,7 @@ section[class^="aul__"] {
   --bs-heading-color: var(--clr-black);
 }
 
-.aul__heading-center>* {
+.aul__heading-center > * {
   text-align: center;
 }
 
