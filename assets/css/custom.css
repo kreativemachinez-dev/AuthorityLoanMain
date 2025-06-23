@@ -236,7 +236,7 @@ section[class^="aul__"] {
 }
 
 .aul__btn:hover {
-  color: var(--clr-accent);
+  color: var(--clr-white);
   background-color: var(--clr-black);
 }
 
