@@ -328,11 +328,26 @@
     </div>
   </footer>
 <script>
+
+  function updateProgressBar(step) {
+  const totalSteps = 4;
+  const progress = Math.round((step / totalSteps) * 100);
+
+  const progressBar = document.querySelector('.progress-bar');
+  const progressNum = document.querySelector('.aul__progress-num');
+
+  progressBar.style.width = `${progress}%`;
+  progressBar.setAttribute('aria-valuenow', progress);
+  progressNum.textContent = `${progress}%`;
+}
+
   function showStep(stepToShow) {
     for (let i = 1; i <= 4; i++) {
       const step = document.getElementById(`step-${i}`);
       if (step) step.classList.toggle('d-none', i !== stepToShow);
     }
+
+    updateProgressBar(stepToShow); 
   }
 
   function nextStep(currentStep) {
