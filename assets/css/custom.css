@@ -419,6 +419,15 @@ textarea.form-control {
   background-color: var(--clr-primary);
 }
 
+.aul__header.fixed__header {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  animation: menusticky 0.7s ease-in-out;
+  box-shadow: 0px 13px 35px -12px rgba(35, 35, 35, 0.15);
+}
+
 .aul__header-right {
   gap: 32px;
 }
@@ -452,11 +461,66 @@ textarea.form-control {
   box-shadow: none;
 }
 
-.aul__header .navbar-nav .nav-item:hover a {
+.aul__header .btn-close {
+  opacity: .8;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  --bs-btn-close-bg: none;
+}
+
+/* .aul__header .navbar-nav .nav-item:hover a {
   color: var(--clr-accent);
   transition: .3s all ease-in-out;
   text-decoration: underline;
   text-underline-offset: 5px;
+} */
+
+.aul__header .navbar-nav .nav-item .nav-link {
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--clr-black-200);
+  text-transform: capitalize;
+  position: relative;
+  padding: 0;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: var(--clr-primary);
+}
+
+.aul__header .navbar-nav .nav-item .nav-link::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: fit-content;
+  height: 2px;
+  content: '';
+  background: var(--clr-primary);
+  transition: all 0.4s ease-in-out;
+}
+
+.aul__header .navbar-nav .nav-link:hover {
+  color: var(--clr-primary);
+  transition: all 0.4s ease-in-out;
+
+}
+
+.aul__header .navbar-nav .nav-link:hover::before {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.aul__header .navbar-nav .active.nav-link::before {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 /** ----------------------------
@@ -465,6 +529,10 @@ textarea.form-control {
 /** ----------------------------
 *      Section: Hero Start
 **  --------------------------*/
+.aul__hero {
+  z-index: 4 !important;
+}
+
 .aul__hero-main {
   min-height: calc(100vh - 150px);
   display: flex;
@@ -478,7 +546,7 @@ textarea.form-control {
   text-align: center;
   border-radius: 20px;
   /* margin-bottom: -70px; */
-  margin-bottom: -40px;
+  margin-bottom: -50px;
 
 }
 
@@ -708,10 +776,12 @@ textarea.form-control {
   padding-top: 35px;
   position: relative;
 }
+
 .aul__generic-content p {
   font-size: 20px;
   line-height: 30px;
 }
+
 .aul__generic-content h6 {
   color: var(--clr-white);
   font-size: 28px;
@@ -772,7 +842,8 @@ textarea.form-control {
 }
 
 .aul__generic-content a {
-  color: var(--clr-accent);
+  color: var(--clr-white);
+  font-weight: 600;
 }
 
 ::selection {
@@ -792,12 +863,14 @@ textarea.form-control {
 main {
   background-image: linear-gradient(to bottom, #E8E8E8 0%, #ffffff80 100%);
 }
+
 .aul__progress-line {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .aul__progress-num {
   width: 20px;
   height: 20px;
@@ -810,12 +883,16 @@ main {
   font-weight: 700;
   font-family: var(--ff-body);
 }
+
 .aul__progress-line .progress {
   flex: 0 0 auto;
   width: 97%;
   --bs-progress-height: 10px;
   box-shadow: 0px 4px 10px 0 #F2F2F2, 0px 8px 20px 0 #0000000f;
   background-image: linear-gradient(to right, #fff 0%, #ffffff63 70%);
+}
+.aul__footer-wrap {
+  margin-bottom: 35px;
 }
 /** ----------------------------
 *     Section: Form End
