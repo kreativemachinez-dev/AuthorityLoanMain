@@ -635,6 +635,11 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 
+.aul__path-desc p {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .aul__path-title h5 {
   font-size: 30px;
   font-family: var(--ff-body);
@@ -648,7 +653,7 @@ textarea.form-control {
 
 .aul__connect-wrap {
   padding: 0 inherit;
-  padding-inline: 65px;
+  padding-inline: 35px;
 }
 
 /** ----------------------------
@@ -836,11 +841,6 @@ textarea.form-control {
 
 }
 
-.aul__request-wrapper .aul__content p {
-  width: 75%;
-  margin: 0 auto;
-}
-
 .aul__generic-content a {
   color: var(--clr-white);
   font-weight: 600;
@@ -891,9 +891,11 @@ main {
   box-shadow: 0px 4px 10px 0 #F2F2F2, 0px 8px 20px 0 #0000000f;
   background-image: linear-gradient(to right, #fff 0%, #ffffff63 70%);
 }
+
 .aul__footer-wrap {
   margin-bottom: 35px;
 }
+
 /** ----------------------------
 *     Section: Form End
 **  --------------------------*/
