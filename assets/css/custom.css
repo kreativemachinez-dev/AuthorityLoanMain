@@ -240,6 +240,10 @@ section[class^="aul__"] {
   background-color: var(--clr-black);
 }
 
+.aul__btn-hover-white:hover {
+  color: var(--clr-accent);
+}
+
 .aul__heading {
   position: relative;
   margin-bottom: 32px;
