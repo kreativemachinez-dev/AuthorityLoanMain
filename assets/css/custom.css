@@ -900,7 +900,23 @@ main {
 .aul__footer-wrap {
   margin-bottom: 35px;
 }
-
+.aul__step-title h2 {
+  font-size: 65px;
+  line-height: 75px;
+  color: var(--clr-secondary);
+  font-weight: 700;
+}
+.form-control:focus {
+  box-shadow: inherit;
+  border-color: inherit;
+}
+.aul__step-title {
+  margin-bottom: 15px;
+}
+.aul__form-step {
+  text-align: center;
+  width: 100%;
+}
 /** ----------------------------
 *     Section: Form End
 **  --------------------------*/
