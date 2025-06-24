@@ -960,7 +960,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .aul__form-wrap .aul__form-step .form-check-input:checked[type="radio"] {
