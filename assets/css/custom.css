@@ -15,7 +15,7 @@
   --clr-text: #979797;
   --clr-form-border: #777777;
   --clr-form-text: #464646;
-  --clr-form-content:#302F2F;
+  --clr-form-content: #302F2F;
 
   --ff-primary: "Varela Round", sans-serif;
   --ff-body: "Albert Sans", sans-serif;
@@ -1007,11 +1007,13 @@ main {
   width: 26px;
   object-fit: contain;
 }
+
 .aul__form-step-content {
   margin-bottom: 30px;
 }
+
 .aul__form-step-content p {
-color: var(--clr-form-content);
+  color: var(--clr-form-content);
 }
 
 .aul__form-wrap .aul__form-step .aul__btn.aul__btn-link {
@@ -1020,6 +1022,10 @@ color: var(--clr-form-content);
   border: 1px solid var(--clr-accent);
 }
 
+.aul__form-wrap .aul__form-step .aul__btn.aul__btn-link:hover {
+  color: var(--clr-white) !important;
+  border-color: var(--clr-primary) !important;
+}
 
 /** ----------------------------
 *     Section: Form End
