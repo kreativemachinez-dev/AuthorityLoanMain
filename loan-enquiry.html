@@ -108,12 +108,12 @@
                   </div>
                   <div class="form-group form-button">
                     <button type="button" class="aul__btn" onclick="nextStep(1)">Next</button>
-                  </div> 
+                  </div>
                 </fieldset>
 
 
                 <!-- Step 2 -->
-                <fieldset id="step-2" class="aul__form-step aul__form-step-2 d-none">
+                <fieldset id="step-2" class="aul__form-step aul__form-step-2 ">
                   <legend class="aul__step-title">
                     <h2>Why are you applying for a loan?</h2>
                   </legend>
@@ -144,7 +144,7 @@
                 </fieldset>
 
                 <!-- Step 3 -->
-                <fieldset id="step-3" class="aul__form-step aul__form-step-3 d-none">
+                <fieldset id="step-3" class="aul__form-step aul__form-step-3 ">
                   <legend class="aul__step-title">
                     <h2>Select your credit score range</h2>
                   </legend>
@@ -187,7 +187,7 @@
                 </fieldset>
 
                 <!-- Step 4 -->
-                <fieldset id="step-4" class="aul__form-step aul__form-step-4 d-none">
+                <fieldset id="step-4" class="aul__form-step aul__form-step-4 ">
                   <legend class="aul__step-title">
                     <h2>Select your employment status</h2>
                   </legend>
@@ -233,7 +233,7 @@
                 <!-- Step 5 -->
                 <fieldset id="step-5" class="aul__form-step aul__form-step-5">
                   <legend class="aul__step-title">
-                    <h2>Select your employment status</h2>
+                    <h2>Select your income payment schedule</h2>
                   </legend>
                   <div class="aul__form-fields">
                     <div class="aul__form-radio">
@@ -268,10 +268,132 @@
                     <button type="submit" class="aul__btn">Submit</button>
                   </div>
                 </fieldset>
+
+                <!-- Step 6 -->
+                <fieldset id="step-6" class="aul__form-step aul__form-step-6 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your monthly income</h2>
+                  </legend>
+                  <div class="aul__form-step-content">
+                    <p>You are not required to disclose alimony, child support, or separate maintenance payments unless
+                      you would like them to be considered as part of your income for loan repayment purposes.</p>
+                  </div>
+                  <div class="form-group ">
+                    <input type="number" class="form-control" id="IncomeAmount" placeholder="$ Amount" required
+                      min="100">
+                    <div class="invalid-feedback d-block" id="amount-error" style="display:none;">Enter a valid amount
+                      (min $100)</div>
+                  </div>
+                  <div class="aul__form-step-content">
+                    <p>You may be asked to verify your income</p>
+                  </div>
+                  <div class="form-group form-button">
+                    <button type="button" class="aul__btn" onclick="nextStep(7)">Next</button>
+                  </div>
+                </fieldset>
+
+                <!-- Step7 -->
+                <fieldset id="step-7" class="aul__form-step aul__form-step-7 ">
+                  <legend class="aul__step-title">
+                    <h2>Do you have a checking account?</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="yes" id="yes"
+                            value="yes"><label class="form-check-label" for="yes">Yes</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="yes" id="no"
+                            value="no"><label class="form-check-label" for="no">No
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select your
+                    credit score</div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(6)">Back</button>
+                    <button type="button" class="aul__btn" onclick="nextStep(8)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step8 -->
+                <fieldset id="step-8" class="aul__form-step aul__form-step-8 ">
+                  <legend class="aul__step-title">
+                    <h2>Do you get paid via direct deposit?</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="deposit"
+                            id="deposit1" value="deposit1"><label class="form-check-label" for="deposit1">Yes</label>
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="deposit"
+                            id="deposit2" value="deposit2"><label class="form-check-label" for="deposit2">No
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select your
+                    credit score</div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(7)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(9)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step9 -->
+                <fieldset id="step-9" class="aul__form-step aul__form-step-9 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your street address</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="text" class="form-control" id="address" placeholder="Address" >
+                    <div class="invalid-feedback d-block" id="address-error" style="display:none;">Enter a valid Address</div>
+                  </div>
+                    <div class="aul__form-step-content">
+                    <p>Boston, Massachusetts 02222</p>
+                  </div>
+                   <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(8)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(10)">Next</button>
+                  </div>
+                </fieldset>
+                    <!-- Step10 -->
+                <fieldset id="step-10" class="aul__form-step aul__form-step-10 ">
+                  <legend class="aul__step-title">
+                    <h2>Are you a homeowner or renter?</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="homeowner"
+                            id="homeowner1" value="homeowner1"><label class="form-check-label" for="homeowner1">Own house</label>
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="homeowner"
+                            id="homeowner2" value="homeowner2"><label class="form-check-label" for="homeowner2">Rent house
+                          </label></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(9)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(11)">Next</button>
+                  </div>
+                </fieldset>
+
               </form>
               <div class="aul__form-disclaimer text-center">
                 <h6>Advertiser Disclosure</h6>
-                <p><span><img src="./assets/images/aul__form-img.png" alt="..."></span> We use 256 bit SSL technology to encrypt your data.</p>
+                <p><span><img src="./assets/images/aul__form-img.png" alt="..."></span> We use 256 bit SSL technology to
+                  encrypt your data.</p>
               </div>
             </div>
           </div>
