@@ -110,8 +110,6 @@
                     <button type="button" class="aul__btn" onclick="nextStep(1)">Next</button>
                   </div>
                 </fieldset>
-
-
                 <!-- Step 2 -->
                 <fieldset id="step-2" class="aul__form-step aul__form-step-2 ">
                   <legend class="aul__step-title">
@@ -138,7 +136,8 @@
                       purpose</div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(2)">Back</button>
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(2)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="button" class="aul__btn" onclick="nextStep(2)">Next</button>
                   </div>
                 </fieldset>
@@ -181,7 +180,8 @@
                       credit score</div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(3)">Back</button>
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(3)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="button" class="aul__btn" onclick="nextStep(3)">Next</button>
                   </div>
                 </fieldset>
@@ -225,7 +225,8 @@
                       employment status</div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)">Back</button>
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="submit" class="aul__btn">Submit</button>
                   </div>
                 </fieldset>
@@ -264,7 +265,8 @@
                       employment status</div>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)">Back</button>
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="submit" class="aul__btn">Submit</button>
                   </div>
                 </fieldset>
@@ -288,10 +290,11 @@
                     <p>You may be asked to verify your income</p>
                   </div>
                   <div class="form-group form-button">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(5)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="button" class="aul__btn" onclick="nextStep(7)">Next</button>
                   </div>
                 </fieldset>
-
                 <!-- Step7 -->
                 <fieldset id="step-7" class="aul__form-step aul__form-step-7 ">
                   <legend class="aul__step-title">
@@ -313,7 +316,8 @@
                   <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select your
                     credit score</div>
                   <div class="d-flex justify-content-between">
-                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(6)">Back</button>
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(6)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="button" class="aul__btn" onclick="nextStep(8)">Next</button>
                   </div>
                 </fieldset>
@@ -350,19 +354,20 @@
                     <h2>Enter your street address</h2>
                   </legend>
                   <div class="form-group ">
-                    <input type="text" class="form-control" id="address" placeholder="Address" >
-                    <div class="invalid-feedback d-block" id="address-error" style="display:none;">Enter a valid Address</div>
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <div class="invalid-feedback d-block" id="address-error" style="display:none;">Enter a valid Address
+                    </div>
                   </div>
-                    <div class="aul__form-step-content">
+                  <div class="aul__form-step-content">
                     <p>Boston, Massachusetts 02222</p>
                   </div>
-                   <div class="d-flex justify-content-between">
+                  <div class="d-flex justify-content-between">
                     <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(8)"><span><i
                           class="fa-solid fa-arrow-left-long"></i></span></button>
                     <button type="button" class="aul__btn" onclick="nextStep(10)">Next</button>
                   </div>
                 </fieldset>
-                    <!-- Step10 -->
+                <!-- Step10 -->
                 <fieldset id="step-10" class="aul__form-step aul__form-step-10 ">
                   <legend class="aul__step-title">
                     <h2>Are you a homeowner or renter?</h2>
@@ -371,12 +376,14 @@
                     <div class="aul__form-radio">
                       <div class="form-group ">
                         <div class="form-check"><input class="form-check-input" type="radio" name="homeowner"
-                            id="homeowner1" value="homeowner1"><label class="form-check-label" for="homeowner1">Own house</label>
+                            id="homeowner1" value="homeowner1"><label class="form-check-label" for="homeowner1">Own
+                            house</label>
                         </div>
                       </div>
                       <div class="form-group ">
                         <div class="form-check"><input class="form-check-input" type="radio" name="homeowner"
-                            id="homeowner2" value="homeowner2"><label class="form-check-label" for="homeowner2">Rent house
+                            id="homeowner2" value="homeowner2"><label class="form-check-label" for="homeowner2">Rent
+                            house
                           </label></div>
                       </div>
                     </div>
@@ -388,7 +395,281 @@
                     <button type="button" class="aul__btn" onclick="nextStep(11)">Next</button>
                   </div>
                 </fieldset>
-
+                <!-- Step11 -->
+                <fieldset id="step-11" class="aul__form-step aul__form-step-11 ">
+                  <legend class="aul__step-title">
+                    <h2>How long have you stayed at your current place?</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="cuurentplace"
+                            id="cuurentplace1" value="8 years or more"><label class="form-check-label"
+                            for="cuurentplace1">8 years or more</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="cuurentplace"
+                            id="cuurentplace2" value="4-8 year"><label class="form-check-label" for="cuurentplace2">4-8
+                            year</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="cuurentplace"
+                            id="cuurentplace3" value="1-4 year"><label class="form-check-label" for="cuurentplace3">1-4
+                            year
+                          </label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="cuurentplace"
+                            id="cuurentplace4" value="6-11 months"><label class="form-check-label" for="cuurentplace4">
+                            6-11 months</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="cuurentplace"
+                            id="cuurentplace5" value="6 months or less"><label class="form-check-label"
+                            for="cuurentplace5">
+                            6 months or less</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(10)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(12)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step12 -->
+                <fieldset id="step-12" class="aul__form-step aul__form-step-12 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your email address</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <div class="invalid-feedback d-block" id="email-error" style="display:none;">Enter a valid Email
+                      Address
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(11)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(12)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step13 -->
+                <fieldset id="step-13" class="aul__form-step aul__form-step-13 ">
+                  <legend class="aul__step-title">
+                    <h2>Do you currently own a registered vehicle?</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="regvehicle"
+                            id="regvehicle1" value="Yes, it has been paid off"><label class="form-check-label"
+                            for="regvehicle1">Yes, it has been paid off</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="regvehicle"
+                            id="regvehicle2" value="Yes, payments are in progress"><label class="form-check-label"
+                            for="regvehicle2">Yes, payments are in progress</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="regvehicle"
+                            id="regvehicle3" value="No"><label class="form-check-label" for="regvehicle3">
+                            No
+                          </label></div>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(12)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(14)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step14 -->
+                <fieldset id="step-14" class="aul__form-step aul__form-step-14 ">
+                  <legend class="aul__step-title">
+                    <h2>Select your military affiliation</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="service"
+                            id="service1" value="No military service"><label class="form-check-label" for="service1">No
+                            military service</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="service"
+                            id="service2" value="On active military duty"><label class="form-check-label"
+                            for="service2">On active military duty</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="service"
+                            id="service3" value="Dependent of an active military duty"><label class="form-check-label"
+                            for="service3">
+                            Dependent of an active military duty
+                          </label></div>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(13)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(15)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step15 -->
+                <fieldset id="step-15" class="aul__form-step aul__form-step-15 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter the amount of your unsecured debt</h2>
+                  </legend>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="debtamount"
+                            id="debtamount1" value="$5,999 or less"><label class="form-check-label"
+                            for="debtamount1">$5,999 or less</label>
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="debtamount"
+                            id="debtamount2" value="$6,000 - $9,999"><label class="form-check-label"
+                            for="debtamount2">$6,000 - $9,999
+                          </label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="debtamount"
+                            id="debtamount3" value="$10,000 - $10,999"><label class="form-check-label"
+                            for="debtamount3">$10,000 - $10,999</label>
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="debtamount"
+                            id="debtamount4" value="$20,000 or more"><label class="form-check-label"
+                            for="debtamount4">$20,000 or more
+                          </label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="debtamount"
+                            id="debtamount5" value="None"><label class="form-check-label" for="debtamount5">None</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(14)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(16)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step16 -->
+                <fieldset id="step-16" class="aul__form-step aul__form-step-16 ">
+                  <legend class="aul__step-title">
+                    <h2>What is your name?</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    <div class="invalid-feedback d-block" id="name-error" style="display:none;">Enter a valid name
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    <div class="invalid-feedback d-block" id="name-error" style="display:none;">Enter a valid name
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(15)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(17)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step17 -->
+                <fieldset id="step-17" class="aul__form-step aul__form-step-17 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your date of birth?</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="date" class="form-control" id="dob">
+                    <div class="invalid-feedback d-block" id="date-error" style="display:none;">Enter a valid name
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(16)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(18)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step18 -->
+                <fieldset id="step-18" class="aul__form-step aul__form-step-18 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your phone number</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="number" class="form-control" id="phonenumber" placeholder="(XXX)XXX-XXX">
+                    <div class="invalid-feedback d-block" id="number-error" style="display:none;">Enter a valid name
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="check_content"
+                        id="check_content" value="checkcontent">
+                      <label class="form-check-label" for="check_content">
+                        I consent to receive recurring communications at the phone number I provided regarding my loan
+                        inquiry, promotional offers, and related financial services. These messages may be delivered via
+                        automated systems, pre-recorded or artificial voice messages, or text messages, even if my
+                        number is listed on a Do Not Call registry. Message and data rates may apply. I understand I may
+                        opt out at any time by replying STOP to any text message. By submitting this form, I provide my
+                        electronic signature and acknowledge that consent is not a condition of service. <a
+                          href="#">Terms of
+                          Service</a> and <a href="#">Privacy Policy apply.</a>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(17)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(19)">Next</button>
+                  </div>
+                </fieldset>
+                <!-- Step19 -->
+                <fieldset id="step-19" class="aul__form-step aul__form-step-18 ">
+                  <legend class="aul__step-title">
+                    <h2>Enter your social security number</h2>
+                  </legend>
+                  <div class="form-group ">
+                    <input type="number" class="form-control" id="socialnumber" placeholder="(XXX)XXX-XXX">
+                    <div class="invalid-feedback d-block" id="number-error" style="display:none;">Enter a valid social
+                      security number
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="check_content"
+                        id="check_content" value="checkcontent">
+                      <label class="form-check-label" for="check_content">
+                        I have read and agree to the <a href="#">Privacy Policy</a>,<a href="#">Terms of Use</a>, <a
+                          href="#">Advertising Disclosure</a>,<a href="#">E-Consent,</a>
+                        and <a href="#">General Disclaimer</a>
+                        . By submitting my  information, I consent to receive marketing calls,
+                        text messages, and  emails from Digital Consulting Group LLC and its partners at the contact 
+                        information I provide, including use of an autodialer, prerecorded  messages, or automated SMS,
+                        as described in the linked policies. I also  authorize participating lenders and financial
+                        service providers to  obtain consumer reports (including credit and/or other information) as 
+                        described in the FCRA Notice, and I consent to receive and sign  disclosures and agreements
+                        electronically pursuant to the E-SIGN Act. I  understand that Digital Consulting Group LLC is
+                        not a lender, does not  make credit decisions, and loan offers are subject to lender approval 
+                        and may not be available in all states.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(17)"><span><i
+                          class="fa-solid fa-arrow-left-long"></i></span></button>
+                    <button type="button" class="aul__btn" onclick="nextStep(19)">Next</button>
+                  </div>
+                </fieldset>
               </form>
               <div class="aul__form-disclaimer text-center">
                 <h6>Advertiser Disclosure</h6>
