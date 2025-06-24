@@ -938,6 +938,7 @@ main {
   color: #fff;
   font-weight: 500;
   background-color: var(--clr-secondary);
+  border: none;
 
 }
 
@@ -953,7 +954,6 @@ main {
   border: 1px solid var(--clr-form-border);
   border-radius: 10px;
   color: var(--clr-form-text);
-  margin-bottom: 15px;
   font-size: 22px;
   font-weight: 400;
 }

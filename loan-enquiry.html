@@ -81,7 +81,8 @@
           <div class="col-lg-12">
             <div class="aul__progress-line">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                  aria-valuemax="100"></div>
               </div>
               <span class="aul__progress-num">5%</span>
             </div>
@@ -102,7 +103,8 @@
                   </legend>
                   <div class="form-group ">
                     <input type="number" class="form-control" id="loanAmount" placeholder="$ Amount" required min="100">
-                    <div class="invalid-feedback d-block" id="amount-error" style="display:none;">Enter a valid amount (min $100)</div>
+                    <div class="invalid-feedback d-block" id="amount-error" style="display:none;">Enter a valid amount
+                      (min $100)</div>
                   </div>
                   <div class="form-group form-button">
                     <button type="button" class="aul__btn" onclick="nextStep(1)">Next</button>
@@ -131,7 +133,8 @@
                       <option>Wedding</option>
                       <option>Other</option>
                     </select>
-                    <div class="invalid-feedback d-block" id="purpose-error" style="display:none;">Please select a purpose</div>
+                    <div class="invalid-feedback d-block" id="purpose-error" style="display:none;">Please select a
+                      purpose</div>
                   </div>
                   <div class="d-flex justify-content-between">
                     <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(2)">Back</button>
@@ -144,13 +147,37 @@
                   <legend class="aul__step-title">
                     <h2>Select your credit score range</h2>
                   </legend>
-                  <div class="form-group ">
-                    <div class="form-check"><input class="form-check-input" type="radio" name="creditScore" id="credit1" value="excellent"><label class="form-check-label" for="credit1">Excellent (720+)</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="creditScore" id="credit2" value="good"><label class="form-check-label" for="credit2">Good (660–719)</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="creditScore" id="credit3" value="fair"><label class="form-check-label" for="credit3">Fair (600–659)</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="creditScore" id="credit4" value="poor"><label class="form-check-label" for="credit4">Poor (Under 599)</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="creditScore" id="credit5" value="no-credit"><label class="form-check-label" for="credit5">No Credit Established</label></div>
-                    <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select your credit score</div>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="creditScore"
+                            id="credit1" value="excellent"><label class="form-check-label" for="credit1">Excellent
+                            (720+)</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="creditScore"
+                            id="credit2" value="good"><label class="form-check-label" for="credit2">Good
+                            (660–719)</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="creditScore"
+                            id="credit3" value="fair"><label class="form-check-label" for="credit3">Fair
+                            (600–659)</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="creditScore"
+                            id="credit4" value="poor"><label class="form-check-label" for="credit4">Poor (Under
+                            599)</label></div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="creditScore"
+                            id="credit5" value="no-credit"><label class="form-check-label" for="credit5">No Credit
+                            Established</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-block" id="credit-error" style="display:none;">Please select your
+                      credit score</div>
                   </div>
                   <div class="d-flex justify-content-between">
                     <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(3)">Back</button>
@@ -163,13 +190,38 @@
                   <legend class="aul__step-title">
                     <h2>Select your employment status</h2>
                   </legend>
-                  <div class="form-group">
-                    <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus" id="employment1" value="employment"><label class="form-check-label" for="employment1">Employment</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus" id="employment2" value="self-employed"><label class="form-check-label" for="employment2">Self Employed</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus" id="employment3" value="social-security-disability"><label class="form-check-label" for="employment3">Social Security or Disability</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus" id="employment4" value="benefits"><label class="form-check-label" for="employment4">Benefits</label></div>
-                    <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus" id="employment5" value="unemployed"><label class="form-check-label" for="employment5">Unemployed</label></div>
-                    <div class="invalid-feedback d-block" id="employment-error" style="display:none;">Please select employment status</div>
+                  <div class="aul__form-fields">
+                    <div class="aul__form-radio">
+                      <div class="form-group">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus"
+                            id="employment1" value="employment"><label class="form-check-label"
+                            for="employment1">Employment</label></div>
+                      </div>
+                      <div class="form-group">
+
+                        <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus"
+                            id="employment2" value="self-employed"><label class="form-check-label"
+                            for="employment2">Self
+                            Employed</label></div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus"
+                            id="employment3" value="social-security-disability"><label class="form-check-label"
+                            for="employment3">Social Security or Disability</label></div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus"
+                            id="employment4" value="benefits"><label class="form-check-label"
+                            for="employment4">Benefits</label></div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="employmentStatus"
+                            id="employment5" value="unemployed"><label class="form-check-label"
+                            for="employment5">Unemployed</label></div>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback d-block" id="employment-error" style="display:none;">Please select
+                      employment status</div>
                   </div>
                   <div class="d-flex justify-content-between">
                     <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)">Back</button>
@@ -186,22 +238,29 @@
                     <div class="aul__form-radio">
                       <div class="form-group">
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment1" value="monthly">
+                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment1"
+                            value="monthly">
                           <label class="form-check-label" for="payment1">Monthly</label>
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule" id="payment2" value="twice-a-month"><label class="form-check-label" for="payment2">Twice A Month</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule"
+                            id="payment2" value="twice-a-month"><label class="form-check-label" for="payment2">Twice A
+                            Month</label></div>
                       </div>
                       <div class="form-group">
-                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule" id="payment3" value="every-other-week"><label class="form-check-label" for="payment3">Every Other Week</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule"
+                            id="payment3" value="every-other-week"><label class="form-check-label" for="payment3">Every
+                            Other Week</label></div>
                       </div>
                       <div class="form-group">
-                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule" id="payment4" value="weekly"><label class="form-check-label" for="payment4">Weekly</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="paymentSchedule"
+                            id="payment4" value="weekly"><label class="form-check-label" for="payment4">Weekly</label>
+                        </div>
                       </div>
                     </div>
-                    <div class="invalid-feedback d-block" id="payment-error" style="display:none;">Please select employment status</div>
-                    </div>
+                    <div class="invalid-feedback d-block" id="payment-error" style="display:none;">Please select
+                      employment status</div>
                   </div>
                   <div class="d-flex justify-content-between">
                     <button type="button" class="aul__btn aul__btn-link" onclick="previousStep(4)">Back</button>
@@ -218,86 +277,86 @@
   </main>
 
 
-<script>
+  <script>
 
-//   function updateProgressBar(step) {
-//   const totalSteps = 5;
-//   const progress = Math.round((step / totalSteps) * 100);
+    //   function updateProgressBar(step) {
+    //   const totalSteps = 5;
+    //   const progress = Math.round((step / totalSteps) * 100);
 
-//   const progressBar = document.querySelector('.progress-bar');
-//   const progressNum = document.querySelector('.aul__progress-num');
+    //   const progressBar = document.querySelector('.progress-bar');
+    //   const progressNum = document.querySelector('.aul__progress-num');
 
-//   progressBar.style.width = `${progress}%`;
-//   progressBar.setAttribute('aria-valuenow', progress);
-//   progressNum.textContent = `${progress}%`;
-// }
+    //   progressBar.style.width = `${progress}%`;
+    //   progressBar.setAttribute('aria-valuenow', progress);
+    //   progressNum.textContent = `${progress}%`;
+    // }
 
-//   function showStep(stepToShow) {
-//     for (let i = 1; i <= 4; i++) {
-//       const step = document.getElementById(`step-${i}`);
-//       if (step) step.classList.toggle('d-none', i !== stepToShow);
-//     }
+    //   function showStep(stepToShow) {
+    //     for (let i = 1; i <= 4; i++) {
+    //       const step = document.getElementById(`step-${i}`);
+    //       if (step) step.classList.toggle('d-none', i !== stepToShow);
+    //     }
 
-//     updateProgressBar(stepToShow); 
-//   }
+    //     updateProgressBar(stepToShow);
+    //   }
 
-//   function nextStep(currentStep) {
-//     let valid = false;
+    //   function nextStep(currentStep) {
+    //     let valid = false;
 
-//     if (currentStep === 1) {
-//       const amount = document.getElementById('loanAmount');
-//       const error = document.getElementById('amount-error');
-//       if (amount.value && parseInt(amount.value) >= 100) {
-//         error.style.display = 'none';
-//         valid = true;
-//       } else {
-//         error.style.display = 'block';
-//       }
-//     }
+    //     if (currentStep === 1) {
+    //       const amount = document.getElementById('loanAmount');
+    //       const error = document.getElementById('amount-error');
+    //       if (amount.value && parseInt(amount.value) >= 100) {
+    //         error.style.display = 'none';
+    //         valid = true;
+    //       } else {
+    //         error.style.display = 'block';
+    //       }
+    //     }
 
-//     if (currentStep === 2) {
-//       const purpose = document.getElementById('loanPurpose');
-//       const error = document.getElementById('purpose-error');
-//       if (purpose.value) {
-//         error.style.display = 'none';
-//         valid = true;
-//       } else {
-//         error.style.display = 'block';
-//       }
-//     }
+    //     if (currentStep === 2) {
+    //       const purpose = document.getElementById('loanPurpose');
+    //       const error = document.getElementById('purpose-error');
+    //       if (purpose.value) {
+    //         error.style.display = 'none';
+    //         valid = true;
+    //       } else {
+    //         error.style.display = 'block';
+    //       }
+    //     }
 
-//     if (currentStep === 3) {
-//       const radios = document.querySelectorAll('input[name="creditScore"]');
-//       const error = document.getElementById('credit-error');
-//       if ([...radios].some(r => r.checked)) {
-//         error.style.display = 'none';
-//         valid = true;
-//       } else {
-//         error.style.display = 'block';
-//       }
-//     }
+    //     if (currentStep === 3) {
+    //       const radios = document.querySelectorAll('input[name="creditScore"]');
+    //       const error = document.getElementById('credit-error');
+    //       if ([...radios].some(r => r.checked)) {
+    //         error.style.display = 'none';
+    //         valid = true;
+    //       } else {
+    //         error.style.display = 'block';
+    //       }
+    //     }
 
-//     if (valid) showStep(currentStep + 1);
-//   }
+    //     if (valid) showStep(currentStep + 1);
+    //   }
 
-//   function previousStep(currentStep) {
-//     showStep(currentStep - 1);
-//   }
+    //   function previousStep(currentStep) {
+    //     showStep(currentStep - 1);
+    //   }
 
-//   // Optional: prevent form submission if employment not selected
-//   document.getElementById('loanForm').addEventListener('submit', function (e) {
-//     const radios = document.querySelectorAll('input[name="employmentStatus"]');
-//     const error = document.getElementById('employment-error');
-//     if (![...radios].some(r => r.checked)) {
-//       error.style.display = 'block';
-//       e.preventDefault();
-//     } else {
-//       error.style.display = 'none';
-//       alert("Form submitted successfully!");
-//       // Optionally remove this alert in production
-//     }
-//   });
-</script>
+    //   // Optional: prevent form submission if employment not selected
+    //   document.getElementById('loanForm').addEventListener('submit', function (e) {
+    //     const radios = document.querySelectorAll('input[name="employmentStatus"]');
+    //     const error = document.getElementById('employment-error');
+    //     if (![...radios].some(r => r.checked)) {
+    //       error.style.display = 'block';
+    //       e.preventDefault();
+    //     } else {
+    //       error.style.display = 'none';
+    //       alert("Form submitted successfully!");
+    //       // Optionally remove this alert in production
+    //     }
+    //   });
+  </script>
 
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
