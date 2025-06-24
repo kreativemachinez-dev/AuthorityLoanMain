@@ -914,6 +914,14 @@ main {
   width: 100%;
 }
 
+.aul__form-step .form-group {
+  position: relative;
+}
+
+.aul__form-step .form-group .form-check {
+  position: relative;
+}
+
 .aul__form-wrap .aul__form-step .form-control {
   min-height: 90px;
   background-color: transparent;
@@ -961,9 +969,16 @@ main {
 
 .aul__form-wrap .aul__form-step .form-check .form-check-input {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   margin: 0 !important;
+  border: 2px solid var(--clr-form-border);
+  border-radius: 0;
+  padding: 7px;
+}
+
+.aul__form-wrap .aul__form-step .aul__form-radio .form-check .form-check-input {
+  opacity: 0;
 }
 
 .aul__form-wrap .aul__form-step .form-check-input:checked[type="radio"] {
@@ -1057,6 +1072,7 @@ main {
 
 .aul__form-step a {
   color: var(--clr-secondary);
+  text-decoration: underline;
 }
 
 .aul__form-step .form-check-label {
