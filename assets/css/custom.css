@@ -13,6 +13,8 @@
   --clr-black: #1E1E1E;
   --clr-black-200: #111111;
   --clr-text: #979797;
+  --clr-form-border: #777777;
+  --clr-form-text: #464646;
 
   --ff-primary: "Varela Round", sans-serif;
   --ff-body: "Albert Sans", sans-serif;
@@ -914,14 +916,13 @@ main {
 .aul__form-wrap .aul__form-step .form-control {
   min-height: 90px;
   background-color: transparent;
-  border: 1px solid var(--clr-grey);
   border-radius: 10px;
   padding: 15px 20px;
-  color: #464646;
+  color: var(--clr-form-text);
   font-size: 22px;
   font-weight: 400;
   font-family: var(--ff-body);
-  border: 1px solid #777777
+  border: 1px solid var(--clr-form-border);
 }
 
 .aul__form-wrap .aul__form-step .form-group:not(.form-button) {
@@ -932,7 +933,7 @@ main {
   appearance: textfield;
 }
 
-
+/* Form check box */
 .aul__form-wrap .aul__form-step .form-check-input[type="radio"]:checked+.form-check-label {
   color: #fff;
   font-weight: 500;
@@ -949,9 +950,9 @@ main {
   z-index: 1;
   position: relative;
   background-color: transparent;
-  border: 1px solid #777777;
+  border: 1px solid var(--clr-form-border);
   border-radius: 10px;
-  color: #464646;
+  color: var(--clr-form-text);
   margin-bottom: 15px;
   font-size: 22px;
   font-weight: 400;
@@ -972,8 +973,20 @@ main {
   -webkit-appearance: none;
   appearance: none;
 }
-
-
+.aul__form-radio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aul__form-radio > * {
+  flex: 0 0 auto;
+  width: 50%;
+}
+/* 
+.aul__form-wrap .aul__form-step .aul__btn.aul__btn-link {
+  background-color: transparent;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-accent);
+} */
 
 
 /** ----------------------------
