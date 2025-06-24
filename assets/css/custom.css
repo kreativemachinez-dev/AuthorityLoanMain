@@ -250,7 +250,7 @@ section[class^="aul__"] {
   --bs-heading-color: var(--clr-black);
 }
 
-.aul__heading-center > * {
+.aul__heading-center>* {
   text-align: center;
 }
 
@@ -347,19 +347,6 @@ h5 {
 .swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   bottom: 0px;
-}
-
-
-.form-control {
-  height: 55px;
-  background-color: transparent;
-  border: 1px solid var(--clr-grey);
-  border-radius: 15px;
-  padding: 15px 20px;
-}
-
-.form-group:not(.form-button) {
-  margin-bottom: 16px;
 }
 
 .form-control::placeholder {
@@ -900,23 +887,94 @@ main {
 .aul__footer-wrap {
   margin-bottom: 35px;
 }
+
 .aul__step-title h2 {
   font-size: 65px;
   line-height: 75px;
   color: var(--clr-secondary);
   font-weight: 700;
+  margin-bottom: 20px;
 }
+
 .form-control:focus {
   box-shadow: inherit;
   border-color: inherit;
 }
+
 .aul__step-title {
   margin-bottom: 15px;
 }
+
 .aul__form-step {
   text-align: center;
   width: 100%;
 }
+
+.aul__form-wrap .aul__form-step .form-control {
+  min-height: 90px;
+  background-color: transparent;
+  border: 1px solid var(--clr-grey);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #464646;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: var(--ff-body);
+  border: 1px solid #777777
+}
+
+.aul__form-wrap .aul__form-step .form-group:not(.form-button) {
+  margin-bottom: 30px;
+}
+
+.aul__form-step input[type="number"] {
+  appearance: textfield;
+}
+
+
+.aul__form-wrap .aul__form-step .form-check-input[type="radio"]:checked+.form-check-label {
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--clr-primary);
+
+}
+
+.aul__form-wrap .aul__form-step .form-check-input[type="radio"]+.form-check-label {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 1;
+  position: relative;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid var(--clr-grey);
+  border-radius: 10px;
+  color: var(--clr-grey);
+  margin-bottom: 15px;
+}
+
+.aul__form-wrap .aul__form-step .form-check .form-check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.aul__form-wrap .aul__form-step .form-check-input:checked[type="radio"] {
+  background-color: var(--clr-primary);
+  border: none !important;
+}
+
+.aul__form-wrap .aul__form-step input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+
+
 /** ----------------------------
 *     Section: Form End
 **  --------------------------*/
