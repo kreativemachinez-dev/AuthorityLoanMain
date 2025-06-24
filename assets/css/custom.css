@@ -973,14 +973,40 @@ main {
   -webkit-appearance: none;
   appearance: none;
 }
+
 .aul__form-radio {
   display: flex;
   flex-wrap: wrap;
 }
-.aul__form-radio > * {
+
+.aul__form-radio>* {
   flex: 0 0 auto;
   width: 50%;
 }
+
+.aul__form-disclaimer h6 {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--ff-body);
+  font-weight: 400;
+  text-decoration: underline;
+  color: var(--clr-secondary);
+  margin-bottom: 15px;
+}
+
+.aul__form-disclaimer span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.aul__form-disclaimer span img {
+  height: 26px;
+  width: 26px;
+  object-fit: contain;
+}
+
 /* 
 .aul__form-wrap .aul__form-step .aul__btn.aul__btn-link {
   background-color: transparent;
