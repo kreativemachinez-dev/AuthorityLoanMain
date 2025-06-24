@@ -963,6 +963,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  margin: 0 !important;
 }
 
 .aul__form-wrap .aul__form-step .form-check-input:checked[type="radio"] {
@@ -985,6 +986,21 @@ main {
   width: 50%;
 }
 
+.aul__form-radio>*:last-child {
+  width: 100%;
+}
+
+#step-5 .aul__form-radio>*:last-child {
+  width: 50%;
+}
+
+#step-7 .aul__form-radio .form-group,
+#step-8 .aul__form-radio .form-group,
+#step-9 .aul__form-radio .form-group,
+#step-10 .aul__form-radio .form-group {
+  width: 100%;
+}
+
 .aul__form-disclaimer h6 {
   font-size: 20px;
   line-height: 30px;
@@ -993,6 +1009,14 @@ main {
   text-decoration: underline;
   color: var(--clr-secondary);
   margin-bottom: 15px;
+}
+
+.aul__form-disclaimer p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: var(--ff-body);
+  color: #4D4D4D;
 }
 
 .aul__form-disclaimer span {
@@ -1025,6 +1049,22 @@ main {
 .aul__form-wrap .aul__form-step .aul__btn.aul__btn-link:hover {
   color: var(--clr-white) !important;
   border-color: var(--clr-primary) !important;
+}
+
+.aul__form-wrap .aul__form-step .form-group.form-button {
+  gap: 20px;
+}
+
+.aul__form-step a {
+  color: var(--clr-secondary);
+}
+
+.aul__form-step .form-check-label {
+  z-index: 1;
+  padding-left: 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /** ----------------------------
