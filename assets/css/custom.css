@@ -893,6 +893,7 @@ main {
   width: 97%;
   --bs-progress-height: 10px;
   --bs-secondary-bg: #FFF9F8;
+  --bs-progress-bar-bg: var(--clr-secondary);
   box-shadow: 0px 7px 16px 0 rgba(159, 159, 159, 0.25);
   background-image: linear-gradient(to right, #fff 0%, #ffffff63 70%);
 }
