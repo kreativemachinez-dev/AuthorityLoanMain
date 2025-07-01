@@ -53,7 +53,9 @@ h2 { font-size: 50px;}
 @media (min-width: 1400px) and (max-width: 1500px){
 }
 @media (max-width: 1400px) and (min-width: 1300px){
-  .aul__form-wrap .aul__form-step .form-control {min-height: 70px;font-size: 18px;}
+  .aul__form-step .form-control, .aul__form-step .form-select {min-height: 70px;font-size: 18px;}
+  .aul__form-step .form-check-input[type="radio"] + .form-check-label {min-height: 70px;font-size: 18px;}
+  .aul__step-title h2 {font-size: 55px;line-height: 65px;}
 }
 
 /* <1600px */
