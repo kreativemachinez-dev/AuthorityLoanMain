@@ -31,6 +31,7 @@ h2 { font-size: 50px;}
 .aul__footer-menu ul li a { font-size: 16px; line-height: 0;}
 .aul__footer-menu ul li + li { margin-left: 20px;  padding-left: 20px;}
 .aul__connect-wrap { padding-inline: 75px;}
+.aul__generic-inner ul li{  font-size: 18px; line-height: 28px;}
 }
 @media (max-width: 1700px) and (min-width: 1600px){
 .aul__hero-main { min-height: calc(105vh - 150px);}
@@ -42,7 +43,7 @@ h2 { font-size: 50px;}
 .aul__request-top-box .aul__heading h2 { font-size: 45px;}
 .aul__generic-content h6 {  font-size: 20px;  line-height: 30px; margin: 15px 0;}
 .aul__footer-powered-logo img{width: 250px;  object-fit: contain;  height: 100%;}
-
+.aul__generic-inner ul li{font-size: 20px; line-height: 30px;}
 }
 @media (max-width: 1600px) and (min-width: 1500px){
 .aul__footer-menu ul {gap: 15px 7px;}
@@ -81,12 +82,13 @@ h2 {  font-size: 35px;  line-height: 45px; }
 .aul__btn { font-size: 16px;  min-height: 50px;  padding-inline: 25px;}
 .aul__generic-content {  padding-top: 0;}
 .aul__header .navbar-toggler .icon-bar { width: 28px;  height: 3px;}
-.aul__header .navbar-brand img {  width: 120px; object-fit: contain; height: 100%;}
+.aul__header .navbar-brand img {  width: 250px; object-fit: contain; height: 100%;}
 .aul__footer-logo img{ width: 120px; object-fit: contain; height: 100%;}
 .aul__footer-powered-logo img{width: 200px;  object-fit: contain;  height: 100%;}
 .aul__faq-wrap .accordion-item button.accordion-button {  font-size: 18px;  line-height: 28px; }
 .aul__path-single { padding: 45px 25px; border-radius: 18px;}
 .aul__path-desc p { width: 60%;}
+.aul__generic-inner ul li{font-size: 16px;  line-height: 26px;}
 }
 /* <1500px */
 @media (max-width: 1499.98px) {
@@ -111,7 +113,7 @@ p {  font-size: 16px;  line-height: 26px;}
 .aul__hero-main { min-height: calc(100vh - 120px);}
 .aul__path-desc p { width: 75%;}
 .aul__connect-wrap {  padding-inline: 65px;}
-
+.aul__generic-inner ul li{font-size: 16px;  line-height: 26px;}
 /* .aul__hero-main {  min-height: calc(81vh - 150px); } */
 }
 @media (max-width: 1300px) {
@@ -140,15 +142,15 @@ h2 { font-size: 35px; line-height: 45px; }
 .aul__footer-menu ul li + li {  margin-left: 6px;  padding-left: 6px;}
 .aul__request-top-box .aul__heading h2 {  font-size: 30px;  line-height: 40px;}
 .aul__header .navbar-toggler .icon-bar { width: 28px; height: 3px; }
-.aul__header .navbar-brand img { width: 90px;}
+.aul__header .navbar-brand img { width: 200px;}
 .aul__btn { font-size: 13px; min-height: 40px; padding-inline: 20px;}
+.aul__generic-inner ul li{font-size: 15px;  line-height: 25px;}
 /* .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 20px solid var(--clr-white); border-bottom: 25px solid transparent;}
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 25px solid var(--clr-secondary);} */
 }
 @media (min-width: 992px) and (max-width: 1023px) {
 .aul__footer-menu ul li a { font-size: 12px;}
 .aul__connect-wrap { padding-inline: 20px; }
-
 }
 @media only screen and (min-width: 991.98px) {}
 
@@ -179,49 +181,20 @@ h2 { font-size: 28px;  line-height: 40px; }
 .aul__path-single::after {  border-top: 30px solid transparent;  border-left: 30px solid var(--clr-secondary); border-bottom: 30px solid transparent;}
 .aul__path-desc p {  width: 100%;}
 .aul__hero-wrap { padding: 30px 35px; margin-bottom: -45px ;}
-
 /* header */
 .aul__header {padding: 12px 0 !important;}
 /* header */
-.aul__body main {
-background-image: url('../images/aul-mobile-bg.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: calc(100vh - 45px);padding: 0 12px;
-}
-main::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(34, 125, 196, 0.36) 20%, #F8F9FA 62%, #F8F9FA 72%);
-  left: 0;
-  top: 0;
-}
+.aul__body main { background-image: url('../images/aul-mobile-bg.webp'); background-size: cover; background-position: center;  background-repeat: no-repeat; position: relative;  min-height: calc(100vh - 45px);padding: 0 12px;}
+ main::before { position: absolute; content: ''; width: 100%; height: 100%; background-image: linear-gradient(to bottom, rgba(34, 125, 196, 0.36) 20%, #F8F9FA 62%, #F8F9FA 72%); left: 0; top: 0;}
 /* main {background-image: linear-gradient(to bottom, rgba(34, 125, 196, 0.36) 0%, #F8F9FA 62%, #F8F9FA 72%);} */
 /* FORM */
-.aul__progress {
-  padding-top: 16px !important;
-}
+.aul__progress { padding-top: 16px !important;}
 .aul__progress-line .progress {width: 90%;--bs-progress-height: 6px;}
 .aul__progress-num {justify-content: flex-end;flex: 0 0 auto;width: 10%;color: var(--clr-white);}
 .aul__step-title h2 {font-family: var(--ff-primary);color: var(--clr-white);font-weight: 400;}
 .aul__step-title h2 .highlight {position: relative;z-index: 1;}
-.aul__step-title h2 .highlight::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 45%;
-  background-color: var(--clr-accent);
-  z-index: -1;
-  bottom: 10px;
-}
-.aul__body {
-  height: 100dvh;
-  overflow: hidden;
-}
+.aul__step-title h2 .highlight::before { position: absolute; content: ''; width: 100%; height: 45%; background-color: var(--clr-accent); z-index: -1; bottom: 10px;}
+.aul__body { height: 100dvh; overflow: hidden;}
 .aul__step-title {padding: 0 12px;}
 .aul__form-wrap {height: calc(100dvh - 121px);display: flex;flex-direction: column;justify-content: space-between;padding-bottom: 15px;}
 .aul__form-step .form-control, .aul__form-step .form-select {background: linear-gradient(#F9F9F9, #F9F9F9) padding-box, linear-gradient(180deg, #FFF 0%, #E8E8E8 100%) border-box;border: 2px solid transparent;background-color: #F9F9F9;box-shadow: rgb(238, 238, 238) 3px 3px 6px 0px inset, rgba(247, 247, 247, 0.5) -3px -3px 6px 2px inset;}
@@ -234,6 +207,7 @@ main::before {
 .form-radio > * {width: 48%;}
 .aul__form-wrap .aul__form-step .form-check-input[type="radio"]:checked + .form-check-label {background: linear-gradient(var(--clr-secondary), var(--clr-secondary)) padding-box, linear-gradient(180deg, #6D63F58C 0%, #ffffff29 100%) border-box;border: 2px solid transparent;background-color: var(--clr-secondary);box-shadow: rgba(0, 0, 0, 0.22) 0px 4px 10px 0px inset;}
 /* FORM */
+.aul__generic-inner ul li{font-size: 14px;  line-height: 24px;}
 }
 
 @media (max-width: 767.98px) {
@@ -255,7 +229,7 @@ h2 { font-size: 26px; line-height: 36px;}
 .aul__hero-wrap h1 span { font-size: 24px;}
 .aul__hero-main {min-height: calc(65vh - 150px);}
 .aul__hero-wrap {  border-radius: 20px 20px 0 0; margin-bottom: -40px;}
-.aul__header .navbar-brand img {width: 80px;}
+.aul__generic-inner ul li{font-size: 15px;  line-height: 25px;}
 }
 @media (max-width: 575.98px) {
 p { font-size: 14px; line-height: 24px; }
@@ -273,7 +247,7 @@ h2 {  font-size: 22px;  line-height: 32px; }
 .aul__header .aul__header-btn .aul__btn {  font-size: 12px;  min-height: 35px;  padding-inline: 15px;}
 .aul__btn { font-size: 12px;  min-height: 35px; padding-inline: 15px;}
 .aul__header .navbar-toggler .icon-bar { width: 25px; height: 3px;}
-.aul__header .navbar-brand img{width: 80px;  height: 100%;  object-fit: contain;}
+.aul__header .navbar-brand img{width: 170px; height: 100%;  object-fit: contain;}
 .aul__header-right {  gap: 15px;}
 .aul__header .navbar-brand{margin-right: 0;}
 .aul__generic-content h6 {  font-size: 12px;line-height: 22px;margin: 5px 0;}
@@ -284,7 +258,6 @@ h2 {  font-size: 22px;  line-height: 32px; }
 .aul__faq-wrap .accordion-item { padding: 10px 10px;}
 .aul__faq-wrap .accordion-item .accordion-body {  padding: 0px 30px 15px 30px;}
 .aul__footer-logo img { width: 80px; }
-
 /* aul-banner */
 .aul__hero-main { min-height: calc(100vh - 60px); align-items: flex-start;}
 .aul__hero-wrap {  padding: 35px 15px; margin-top: 75px; border-radius: 20px; margin-bottom: 0;}
@@ -294,6 +267,8 @@ h2 {  font-size: 22px;  line-height: 32px; }
 .aul__bgImg { display: none;}
 .aul__bgImg.aul__mobile-bg {display: block;}
 .aul__hero-wrap .aul__btn { border-radius: 60px;  padding: 15px 35px; font-weight: 700; font-size: 18px; line-height: 30px; text-align: center; width: 100%; margin-bottom: 30px; }
+.aul__generic-inner ul li{font-size: 14px;  line-height: 24px;}
+.aul__header .aul__header-btn { display: none;}
 }
 @media (max-width: 370px) {
 .aul__hero-wrap h1 { font-size: 30px;}
