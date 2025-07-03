@@ -183,13 +183,13 @@ h2 { font-size: 28px;  line-height: 40px; }
 /* header */
 .aul__header {padding: 12px 0 !important;}
 /* header */
-main {
+.aul__body main {
 background-image: url('../images/aul-mobile-bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: calc(100vh - 45px);
+    min-height: calc(100vh - 45px);padding: 0 12px;
 }
 main::before {
   position: absolute;
@@ -197,6 +197,8 @@ main::before {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(34, 125, 196, 0.36) 20%, #F8F9FA 62%, #F8F9FA 72%);
+  left: 0;
+  top: 0;
 }
 /* main {background-image: linear-gradient(to bottom, rgba(34, 125, 196, 0.36) 0%, #F8F9FA 62%, #F8F9FA 72%);} */
 /* FORM */
@@ -206,7 +208,22 @@ main::before {
 .aul__progress-line .progress {width: 90%;--bs-progress-height: 6px;}
 .aul__progress-num {justify-content: flex-end;flex: 0 0 auto;width: 10%;color: var(--clr-white);}
 .aul__step-title h2 {font-family: var(--ff-primary);color: var(--clr-white);font-weight: 400;}
-.aul__form-wrap {height: calc(90vh - 145px);display: flex;flex-direction: column;justify-content: space-between;}
+.aul__step-title h2 .highlight {position: relative;z-index: 1;}
+.aul__step-title h2 .highlight::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 45%;
+  background-color: var(--clr-accent);
+  z-index: -1;
+  bottom: 10px;
+}
+.aul__body {
+  height: 100dvh;
+  overflow: hidden;
+}
+.aul__step-title {padding: 0 12px;}
+.aul__form-wrap {height: calc(100dvh - 121px);display: flex;flex-direction: column;justify-content: space-between;padding-bottom: 15px;}
 .aul__form-step .form-control, .aul__form-step .form-select {background: linear-gradient(#F9F9F9, #F9F9F9) padding-box, linear-gradient(180deg, #FFF 0%, #E8E8E8 100%) border-box;border: 2px solid transparent;background-color: #F9F9F9;box-shadow: rgb(238, 238, 238) 3px 3px 6px 0px inset, rgba(247, 247, 247, 0.5) -3px -3px 6px 2px inset;}
 .aul__form-step .form-check-input[type="radio"] + .form-check-label {border: none;box-shadow: 0px 4px 21.5px 0px rgba(0, 0, 0, 0.10);justify-content: center;height: 100%;}
 .aul__form-wrap .aul__form-step .form-group:not(.form-button) {margin-bottom: 22px;}

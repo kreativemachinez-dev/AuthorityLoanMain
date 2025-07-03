@@ -14,7 +14,7 @@
   <title>Form - Authority Loan</title>
 </head>
 
-<body>
+<body class="aul__body">
   <header class="aul__header py-xl-3 py-2">
     <div class="container">
       <nav class="navbar py-0">
@@ -99,14 +99,16 @@
 
                 <!-- Step 1 -->
                 <fieldset id="step-1" class="aul__form-step aul__form-step-1">
-                  <legend class="aul__step-title">
-                    <h2>What loan amount are you looking for?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group">
-                      <input type="number" class="form-control" id="loanAmount" placeholder="$ Amount" required min="100">
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>What <span class="highlight">loan</span> <span class="highlight">amount</span> are you looking for?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group">
+                        <input type="number" class="form-control" id="loanAmount" placeholder="$ Amount" required min="100">
+                      </div>
+                      <div class="invalid-feedback" id="loanAmount-error" style="display:none;">Enter a valid amount (min $100)</div>
                     </div>
-                    <div class="invalid-feedback" id="loanAmount-error" style="display:none;">Enter a valid amount (min $100)</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -117,29 +119,31 @@
 
                 <!-- Step 2 -->
                 <fieldset id="step-2" class="aul__form-step aul__form-step-2 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Why are you applying for a loan?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group">
-                      <select id="loanPurpose" class="form-select" required>
-                        <option value="">Select one</option>
-                        <option>Auto Purchase</option>
-                        <option>Credit Card Consolidation</option>
-                        <option>Debt Consolidation</option>
-                        <option>Debt Settlement</option>
-                        <option>Education</option>
-                        <option>Home Improvement</option>
-                        <option>Medical</option>
-                        <option>Relocation</option>
-                        <option>Renewable Energy</option>
-                        <option>Small Business</option>
-                        <option>Travel</option>
-                        <option>Wedding</option>
-                        <option>Other</option>
-                      </select>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Why are you applying for a loan?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group">
+                        <select id="loanPurpose" class="form-select" required>
+                          <option value="">Select one</option>
+                          <option>Auto Purchase</option>
+                          <option>Credit Card Consolidation</option>
+                          <option>Debt Consolidation</option>
+                          <option>Debt Settlement</option>
+                          <option>Education</option>
+                          <option>Home Improvement</option>
+                          <option>Medical</option>
+                          <option>Relocation</option>
+                          <option>Renewable Energy</option>
+                          <option>Small Business</option>
+                          <option>Travel</option>
+                          <option>Wedding</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="invalid-feedback" id="purpose-error" style="display:none;">Please select a purpose</div>
                     </div>
-                    <div class="invalid-feedback" id="purpose-error" style="display:none;">Please select a purpose</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -153,33 +157,35 @@
 
                 <!-- Step 3 -->
                 <fieldset id="step-3" class="aul__form-step aul__form-step-3 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Select your credit score range</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="creditScore" id="credit1" value="excellent">
-                        <label class="form-check-label" for="credit1">Excellent (720+)</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Select your credit score range</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="creditScore" id="credit1" value="excellent">
+                          <label class="form-check-label" for="credit1">Excellent (720+)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="creditScore" id="credit2" value="good">
+                          <label class="form-check-label" for="credit2">Good (660–719)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="creditScore" id="credit3" value="fair">
+                          <label class="form-check-label" for="credit3">Fair (600–659)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="creditScore" id="credit4" value="poor">
+                          <label class="form-check-label" for="credit4">Poor (Under 599)</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="creditScore" id="credit5" value="no-credit">
+                          <label class="form-check-label" for="credit5">No Credit Established</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="creditScore" id="credit2" value="good">
-                        <label class="form-check-label" for="credit2">Good (660–719)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="creditScore" id="credit3" value="fair">
-                        <label class="form-check-label" for="credit3">Fair (600–659)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="creditScore" id="credit4" value="poor">
-                        <label class="form-check-label" for="credit4">Poor (Under 599)</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="creditScore" id="credit5" value="no-credit">
-                        <label class="form-check-label" for="credit5">No Credit Established</label>
-                      </div>
+                      <div class="invalid-feedback" id="creditScore-error" style="display:none;">Please select yourcredit score</div>
                     </div>
-                    <div class="invalid-feedback" id="creditScore-error" style="display:none;">Please select yourcredit score</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -193,34 +199,36 @@
 
                 <!-- Step 4 -->
                 <fieldset id="step-4" class="aul__form-step aul__form-step-4 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Select your employment status</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="aul__form-radio">
-                      <div class="form-group form-radio">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="employmentStatus" id="employment1" value="employment">
-                          <label class="form-check-label" for="employment1">Employment</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Select your employment status</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="aul__form-radio">
+                        <div class="form-group form-radio">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="employmentStatus" id="employment1" value="employment">
+                            <label class="form-check-label" for="employment1">Employment</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="employmentStatus" id="employment2" value="self-employed">
+                            <label class="form-check-label" for="employment2">Self Employed</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="employmentStatus" id="employment3" value="social-security-disability">
+                            <label class="form-check-label" for="employment3">Social Security or Disability</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="employmentStatus" id="employment4" value="benefits">
+                            <label class="form-check-label" for="employment4">Benefits</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="employmentStatus" id="employment5" value="unemployed">
+                            <label class="form-check-label" for="employment5">Unemployed</label>
+                          </div>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="employmentStatus" id="employment2" value="self-employed">
-                          <label class="form-check-label" for="employment2">Self Employed</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="employmentStatus" id="employment3" value="social-security-disability">
-                          <label class="form-check-label" for="employment3">Social Security or Disability</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="employmentStatus" id="employment4" value="benefits">
-                          <label class="form-check-label" for="employment4">Benefits</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="employmentStatus" id="employment5" value="unemployed">
-                          <label class="form-check-label" for="employment5">Unemployed</label>
-                        </div>
+                        <div class="invalid-feedback" id="employment-error" style="display:none;">Please select employment status</div>
                       </div>
-                      <div class="invalid-feedback" id="employment-error" style="display:none;">Please select employment status</div>
                     </div>
                   </div>
                   <div class="aul__form-buttons">
@@ -235,29 +243,31 @@
 
                 <!-- Step 5 -->
                 <fieldset id="step-5" class="aul__form-step aul__form-step-5 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Select your income payment schedule</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentSchedule" id="payment1" value="monthly">
-                        <label class="form-check-label" for="payment1">Monthly</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Select your income payment schedule</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment1" value="monthly">
+                          <label class="form-check-label" for="payment1">Monthly</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment2" value="twice-a-month">
+                          <label class="form-check-label" for="payment2">Twice A Month</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment3" value="every-other-week">
+                          <label class="form-check-label" for="payment3">Every Other Week</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="paymentSchedule" id="payment4" value="weekly">
+                          <label class="form-check-label" for="payment4">Weekly</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentSchedule" id="payment2" value="twice-a-month">
-                        <label class="form-check-label" for="payment2">Twice A Month</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentSchedule" id="payment3" value="every-other-week">
-                        <label class="form-check-label" for="payment3">Every Other Week</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentSchedule" id="payment4" value="weekly">
-                        <label class="form-check-label" for="payment4">Weekly</label>
-                      </div>
+                      <div class="invalid-feedback" id="payment-error" style="display:none;">Please Select your payment schedule</div>
                     </div>
-                    <div class="invalid-feedback" id="payment-error" style="display:none;">Please Select your payment schedule</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -271,11 +281,13 @@
                 
                 <!-- Step 6 -->
                 <fieldset id="step-6" class="aul__form-step aul__form-step-6 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your monthly income</h2>
-                  </legend>
-                  <div class="aul__form-step-content">
-                    <p>You are not required to disclose alimony, child support, or separate maintenance payments unless you would like them to be considered as part of your income for loan repayment purposes.</p>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your monthly income</h2>
+                    </legend>
+                    <div class="aul__form-step-content">
+                      <p>You are not required to disclose alimony, child support, or separate maintenance payments unless you would like them to be considered as part of your income for loan repayment purposes.</p>
+                    </div>
                   </div>
                   <div class="aul__form-fields">
                     <div class="form-group">
@@ -298,21 +310,23 @@
 
                 <!-- Step 7 -->
                 <fieldset id="step-7" class="aul__form-step aul__form-step-7 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Do you have a checking account?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="checkingAccount" id="yes" value="yes">
-                        <label class="form-check-label" for="yes">Yes</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Do you have a checking account?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="checkingAccount" id="yes" value="yes">
+                          <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="checkingAccount" id="no" value="no">
+                          <label class="form-check-label" for="no">No</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="checkingAccount" id="no" value="no">
-                        <label class="form-check-label" for="no">No</label>
-                      </div>
+                      <div class="invalid-feedback" id="checkingAccount-error" style="display:none;">Please select an option</div>
                     </div>
-                    <div class="invalid-feedback" id="checkingAccount-error" style="display:none;">Please select an option</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -326,21 +340,23 @@
 
                 <!-- Step 8 -->
                 <fieldset id="step-8" class="aul__form-step aul__form-step-8 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Do you get paid via direct deposit?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="deposit" id="deposit1" value="deposit1">
-                        <label class="form-check-label" for="deposit1">Yes</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Do you get paid via direct deposit?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="deposit" id="deposit1" value="deposit1">
+                          <label class="form-check-label" for="deposit1">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="deposit" id="deposit2" value="deposit2">
+                          <label class="form-check-label" for="deposit2">No</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="deposit" id="deposit2" value="deposit2">
-                        <label class="form-check-label" for="deposit2">No</label>
-                      </div>
+                      <div class="invalid-feedback" id="directDeposit-error" style="display:none;">Please select an option</div>
                     </div>
-                    <div class="invalid-feedback" id="directDeposit-error" style="display:none;">Please select an option</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -354,38 +370,40 @@
 
                 <!-- Step 9 -->
                 <fieldset id="step-9" class="aul__form-step aul__form-step-9 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your street address</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group aul__form-address">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="addressOption" id="autofillOption" value="autofill" checked>
-                        <label class="form-check-label" for="autofillOption">Autofill</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your street address</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group aul__form-address">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="addressOption" id="autofillOption" value="autofill" checked>
+                          <label class="form-check-label" for="autofillOption">Autofill</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="addressOption" id="manualOption" value="manual">
+                          <label class="form-check-label" for="manualOption">Manual Input</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="addressOption" id="manualOption" value="manual">
-                        <label class="form-check-label" for="manualOption">Manual Input</label>
+                      <div id="autofillSection" class="aul__autofill">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="address" placeholder="Address">
+                        </div>
+                        <div class="invalid-feedback" id="address-error" style="display:none;">Enter a valid Address</div>
+                        <div class="aul__form-step-content">
+                          <p>Boston, Massachusetts, 02135, US</p>
+                        </div>
                       </div>
-                    </div>
-                    <div id="autofillSection" class="aul__autofill">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="address" placeholder="Address">
-                      </div>
-                      <div class="invalid-feedback" id="address-error" style="display:none;">Enter a valid Address</div>
-                      <div class="aul__form-step-content">
-                        <p>Boston, Massachusetts, 02135, US</p>
-                      </div>
-                    </div>
-                    <div id="manualSection" class="aul__manual" style="display: none;">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="city" placeholder="City">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="county" placeholder="County">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                      <div id="manualSection" class="aul__manual" style="display: none;">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="county" placeholder="County">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -401,22 +419,24 @@
 
                 <!-- Step 10 -->
                 <fieldset id="step-10" class="aul__form-step aul__form-step-10 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Are you a homeowner or renter?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="homeowner" id="homeowner1" value="homeowner1">
-                        <label class="form-check-label" for="homeowner1">Own house</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Are you a homeowner or renter?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="homeowner" id="homeowner1" value="homeowner1">
+                          <label class="form-check-label" for="homeowner1">Own house</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="homeowner" id="homeowner2" value="homeowner2">
+                          <label class="form-check-label" for="homeowner2">Rent house</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="homeowner" id="homeowner2" value="homeowner2">
-                        <label class="form-check-label" for="homeowner2">Rent house</label>
-                      </div>
+                      <div class="invalid-feedback" id="homeOwner-error" style="display:none;">Select one option</div>
+  
                     </div>
-                    <div class="invalid-feedback" id="homeOwner-error" style="display:none;">Select one option</div>
-
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -430,33 +450,35 @@
 
                 <!-- Step 11 -->
                 <fieldset id="step-11" class="aul__form-step aul__form-step-11 d-none">
-                  <legend class="aul__step-title">
-                    <h2>How long have you stayed at your current place?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace1" value="8 years or more">
-                        <label class="form-check-label" for="cuurentplace1">8 years or more</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>How long have you stayed at your current place?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace1" value="8 years or more">
+                          <label class="form-check-label" for="cuurentplace1">8 years or more</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace2" value="4-8 year">
+                          <label class="form-check-label" for="cuurentplace2">4-8 year</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace3" value="1-4 year">
+                          <label class="form-check-label" for="cuurentplace3">1-4 year</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace4" value="6-11 months">
+                          <label class="form-check-label" for="cuurentplace4">6-11 months</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace5" value="6 months or less">
+                          <label class="form-check-label" for="cuurentplace5">6 months or less</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace2" value="4-8 year">
-                        <label class="form-check-label" for="cuurentplace2">4-8 year</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace3" value="1-4 year">
-                        <label class="form-check-label" for="cuurentplace3">1-4 year</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace4" value="6-11 months">
-                        <label class="form-check-label" for="cuurentplace4">6-11 months</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="cuurentplace" id="cuurentplace5" value="6 months or less">
-                        <label class="form-check-label" for="cuurentplace5">6 months or less</label>
-                      </div>
+                      <div class="invalid-feedback" id="currentPlace-error" style="display:none;">Select an option</div>
                     </div>
-                    <div class="invalid-feedback" id="currentPlace-error" style="display:none;">Select an option</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -470,14 +492,16 @@
 
                 <!-- Step 12 -->
                 <fieldset id="step-12" class="aul__form-step aul__form-step-12 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your email address</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group ">
-                      <input type="email" class="form-control" id="email" placeholder="Email">
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your email address</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group ">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                      <div class="invalid-feedback" id="email-error" style="display:none;">Enter a valid Email Address</div>
                     </div>
-                    <div class="invalid-feedback" id="email-error" style="display:none;">Enter a valid Email Address</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -491,25 +515,27 @@
 
                 <!-- Step 13 -->
                 <fieldset id="step-13" class="aul__form-step aul__form-step-13 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Do you currently own a registered vehicle?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle1" value="Yes, it has been paid off">
-                        <label class="form-check-label" for="regvehicle1">Yes, it has been paid off</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Do you currently own a registered vehicle?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle1" value="Yes, it has been paid off">
+                          <label class="form-check-label" for="regvehicle1">Yes, it has been paid off</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle2" value="Yes, payments are in progress">
+                          <label class="form-check-label" for="regvehicle2">Yes, payments are in progress</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle3" value="No">
+                          <label class="form-check-label" for="regvehicle3">No</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle2" value="Yes, payments are in progress">
-                        <label class="form-check-label" for="regvehicle2">Yes, payments are in progress</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="regvehicle" id="regvehicle3" value="No">
-                        <label class="form-check-label" for="regvehicle3">No</label>
-                      </div>
+                      <div class="invalid-feedback" id="registerVehicle-error" style="display:none;">Select an option</div>
                     </div>
-                    <div class="invalid-feedback" id="registerVehicle-error" style="display:none;">Select an option</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button d-flex justify-content-center">
@@ -523,25 +549,27 @@
 
                 <!-- Step 14 -->
                 <fieldset id="step-14" class="aul__form-step aul__form-step-14 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Select your military affiliation</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="service" id="service1" value="No military service">
-                        <label class="form-check-label" for="service1">No military service</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Select your military affiliation</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="service" id="service1" value="No military service">
+                          <label class="form-check-label" for="service1">No military service</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="service" id="service2" value="On active military duty">
+                          <label class="form-check-label" for="service2">On active military duty</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="service" id="service3" value="Dependent of an active military duty">
+                          <label class="form-check-label" for="service3">Dependent of an active military duty</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="service" id="service2" value="On active military duty">
-                        <label class="form-check-label" for="service2">On active military duty</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="service" id="service3" value="Dependent of an active military duty">
-                        <label class="form-check-label" for="service3">Dependent of an active military duty</label>
-                      </div>
+                      <div class="invalid-feedback" id="militaryAffilation-error" style="display:none;">Select your military status</div>
                     </div>
-                    <div class="invalid-feedback" id="militaryAffilation-error" style="display:none;">Select your military status</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -555,33 +583,35 @@
 
                 <!-- Step 15 -->
                 <fieldset id="step-15" class="aul__form-step aul__form-step-15 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter the amount of your unsecured debt</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group form-radio">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="debtamount" id="debtamount1" value="$5,999 or less">
-                        <label class="form-check-label" for="debtamount1">$5,999 or less</label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter the amount of your unsecured debt</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group form-radio">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="debtamount" id="debtamount1" value="$5,999 or less">
+                          <label class="form-check-label" for="debtamount1">$5,999 or less</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="debtamount" id="debtamount2" value="$6,000 - $9,999">
+                          <label class="form-check-label" for="debtamount2">$6,000 - $9,999</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="debtamount" id="debtamount3" value="$10,000 - $10,999">
+                          <label class="form-check-label" for="debtamount3">$10,000 - $10,999</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="debtamount" id="debtamount4" value="$20,000 or more">
+                          <label class="form-check-label" for="debtamount4">$20,000 or more</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="debtamount" id="debtamount5" value="None">
+                          <label class="form-check-label" for="debtamount5">None</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="debtamount" id="debtamount2" value="$6,000 - $9,999">
-                        <label class="form-check-label" for="debtamount2">$6,000 - $9,999</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="debtamount" id="debtamount3" value="$10,000 - $10,999">
-                        <label class="form-check-label" for="debtamount3">$10,000 - $10,999</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="debtamount" id="debtamount4" value="$20,000 or more">
-                        <label class="form-check-label" for="debtamount4">$20,000 or more</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="debtamount" id="debtamount5" value="None">
-                        <label class="form-check-label" for="debtamount5">None</label>
-                      </div>
+                      <div class="invalid-feedback" id="debtAmount-error" style="display:none;">Select an option</div>
                     </div>
-                    <div class="invalid-feedback" id="debtAmount-error" style="display:none;">Select an option</div>
                   </div>
                   <div class="aul__form-buttons">
                     <div class="form-group form-button">
@@ -595,17 +625,19 @@
 
                 <!-- Step 16 -->
                 <fieldset id="step-16" class="aul__form-step aul__form-step-16 d-none">
-                  <legend class="aul__step-title">
-                    <h2>What is your name?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group ">
-                      <input type="text" class="form-control" id="firstname" placeholder="First Name">
-                      <div class="invalid-feedback" id="firstname-error" style="display:none;">Enter a valid first name</div>
-                    </div>
-                    <div class="form-group ">
-                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                      <div class="invalid-feedback" id="lastname-error" style="display:none;">Enter a valid last name</div>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>What is your name?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group ">
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                        <div class="invalid-feedback" id="firstname-error" style="display:none;">Enter a valid first name</div>
+                      </div>
+                      <div class="form-group ">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        <div class="invalid-feedback" id="lastname-error" style="display:none;">Enter a valid last name</div>
+                      </div>
                     </div>
                   </div>
                   <div class="aul__form-buttons">
@@ -620,13 +652,15 @@
 
                 <!-- Step 17 -->
                 <fieldset id="step-17" class="aul__form-step aul__form-step-17 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your date of birth?</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group ">
-                      <input type="date" class="form-control" id="dob">
-                      <div class="invalid-feedback" id="date-error" style="display:none;">Enter a valid date</div>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your date of birth?</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group ">
+                        <input type="date" class="form-control" id="dob">
+                        <div class="invalid-feedback" id="date-error" style="display:none;">Enter a valid date</div>
+                      </div>
                     </div>
                   </div>
                   <div class="aul__form-buttons">
@@ -641,20 +675,22 @@
 
                 <!-- Step 18 -->
                 <fieldset id="step-18" class="aul__form-step aul__form-step-18 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your phone number</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group ">
-                      <input type="number" class="form-control" id="phonenumber" placeholder="(XXX)XXX-XXX">
-                      <div class="invalid-feedback" id="number-error" style="display:none;">Enter a valid phone number</div>
-                    </div>
-                    <div class="form-group ">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="check_content" id="check_content" value="checkcontent">
-                        <label class="form-check-label" for="check_content">
-                          I consent to receive recurring communications at the phone number I provided regarding my loan inquiry, promotional offers, and related financial services. These messages may be delivered via automated systems, pre-recorded or artificial voice messages, or text messages, even if my number is listed on a Do Not Call registry. Message and data rates may apply. I understand I may opt out at any time by replying STOP to any text message. By submitting this form, I provide my electronic signature and acknowledge that consent is not a condition of service. <a href="#">Terms of Service</a> and <a href="#">Privacy Policy apply.</a>
-                        </label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your phone number</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group ">
+                        <input type="number" class="form-control" id="phonenumber" placeholder="(XXX)XXX-XXX">
+                        <div class="invalid-feedback" id="number-error" style="display:none;">Enter a valid phone number</div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="check_content" id="check_content" value="checkcontent">
+                          <label class="form-check-label" for="check_content">
+                            I consent to receive recurring communications at the phone number I provided regarding my loan inquiry, promotional offers, and related financial services. These messages may be delivered via automated systems, pre-recorded or artificial voice messages, or text messages, even if my number is listed on a Do Not Call registry. Message and data rates may apply. I understand I may opt out at any time by replying STOP to any text message. By submitting this form, I provide my electronic signature and acknowledge that consent is not a condition of service. <a href="#">Terms of Service</a> and <a href="#">Privacy Policy apply.</a>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -670,20 +706,22 @@
 
                 <!-- Step 19 -->
                 <fieldset id="step-19" class="aul__form-step aul__form-step-19 d-none">
-                  <legend class="aul__step-title">
-                    <h2>Enter your social security number</h2>
-                  </legend>
-                  <div class="aul__form-fields">
-                    <div class="form-group">
-                      <input type="number" class="form-control" id="socialnumber" placeholder="(XXX)XXX-XXX">
-                      <div class="invalid-feedback" id="number-error" style="display:none;">Enter a valid socialsecurity number</div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="check_content" id="check_content" value="checkcontent">
-                        <label class="form-check-label" for="check_content">
-                          I have read and agree to the <a href="#">Privacy Policy</a>,<a href="#">Terms of Use</a>, <a href="#">Advertising Disclosure</a>,<a href="#">E-Consent,</a> and <a href="#">General Disclaimer</a>. By submitting my information, I consent to receive marketing calls, text messages, and emails from Digital Consulting Group LLC and its partners at the contact information I provide, including use of an autodialer, prerecorded messages, or automated SMS, as described in the linked policies. I also authorize participating lenders and financial service providers to obtain consumer reports (including credit and/or other information) as described in the FCRA Notice, and I consent to receive and sign disclosures and agreements electronically pursuant to the E-SIGN Act. I understand that Digital Consulting Group LLC is not a lender, does not make credit decisions, and loan offers are subject to lender approval and may not be available in all states.
-                        </label>
+                  <div class="aul__form-head">
+                    <legend class="aul__step-title">
+                      <h2>Enter your social security number</h2>
+                    </legend>
+                    <div class="aul__form-fields">
+                      <div class="form-group">
+                        <input type="number" class="form-control" id="socialnumber" placeholder="(XXX)XXX-XXX">
+                        <div class="invalid-feedback" id="number-error" style="display:none;">Enter a valid socialsecurity number</div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="check_content" id="check_content" value="checkcontent">
+                          <label class="form-check-label" for="check_content">
+                            I have read and agree to the <a href="#">Privacy Policy</a>,<a href="#">Terms of Use</a>, <a href="#">Advertising Disclosure</a>,<a href="#">E-Consent,</a> and <a href="#">General Disclaimer</a>. By submitting my information, I consent to receive marketing calls, text messages, and emails from Digital Consulting Group LLC and its partners at the contact information I provide, including use of an autodialer, prerecorded messages, or automated SMS, as described in the linked policies. I also authorize participating lenders and financial service providers to obtain consumer reports (including credit and/or other information) as described in the FCRA Notice, and I consent to receive and sign disclosures and agreements electronically pursuant to the E-SIGN Act. I understand that Digital Consulting Group LLC is not a lender, does not make credit decisions, and loan offers are subject to lender approval and may not be available in all states.
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
