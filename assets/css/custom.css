@@ -501,7 +501,9 @@ textarea.form-control {
 .aul__hero-wrap .aul__btn {
   margin-bottom: 16px;
 }
-
+.aul__bgImg.aul__mobile-bg {
+  display: none;
+}
 /** ----------------------------
 *      Section: Hero End
 **  --------------------------*/
