@@ -1008,11 +1008,13 @@ main {
 .form-radio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 12px;
 }
 
 .form-radio>* {
   flex: 0 0 auto;
-  width: 50%;
+  width: 49%;
 }
 
 /* If .form-radio has odd number of children, make the last one 100% */
@@ -1029,6 +1031,10 @@ main {
 #step-9 .form-radio .form-group,
 #step-10 .form-radio .form-group {
   width: 100%;
+}
+
+.aul__form-disclaimer {
+  margin-top: 30px;
 }
 
 .aul__form-disclaimer h6 a {
@@ -1083,6 +1089,8 @@ main {
 
 .aul__form-wrap .aul__form-step .form-group.form-button {
   gap: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .aul__form-step a {
@@ -1109,6 +1117,53 @@ main {
 .aul__form-step .aul__form-address .form-check-input:checked[type="radio"] {
   background-color: var(--clr-accent);
   border: none;
+}
+
+.aul__form-step-9 .form-check-input[type="radio"] {
+  border-radius: 100%;
+  box-shadow: none !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: url('../images/aul__form-checkbox.png') no-repeat 0 0;
+  position: static !important;
+  border: none !important;
+
+}
+
+.aul__form-step-9 .form-check-input:checked[type="radio"] {
+  border: none !important;
+  background: url('../images/aul__form-checked.png') no-repeat 0 0 !important;
+  box-shadow: none !important;
+}
+
+.aul__form-step-9 .form-check-input[type="radio"]:checked+.form-check-label {
+  color: #000;
+  font-weight: 500;
+  height: auto !important;
+  padding: 0 0 0 10px !important;
+}
+
+.aul__form-step-9 .form-check-input[type="radio"]+.form-check-label {
+  height: auto !important;
+  padding: 0 0 0 10px !important;
+  justify-content: start;
+}
+
+.aul__manual {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.aul__manual .form-group {
+  width: 100%;
+}
+
+.aul__manual .form-group:nth-child(3),
+.aul__manual .form-group:nth-child(4) {
+  width: 49%;
 }
 
 /** ----------------------------
