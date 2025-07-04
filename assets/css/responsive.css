@@ -83,7 +83,7 @@ h2 {  font-size: 35px;  line-height: 45px; }
 .aul__generic-content {  padding-top: 0;}
 .aul__header .navbar-toggler .icon-bar { width: 28px;  height: 3px;}
 .aul__header .navbar-brand img {  width: 250px; object-fit: contain; height: 100%;}
-.aul__footer-logo img{ width: 120px; object-fit: contain; height: 100%;}
+.aul__footer-logo img{ width: 250px; object-fit: contain; height: 100%;}
 .aul__footer-powered-logo img{width: 200px;  object-fit: contain;  height: 100%;}
 .aul__faq-wrap .accordion-item button.accordion-button {  font-size: 18px;  line-height: 28px; }
 .aul__path-single { padding: 45px 25px; border-radius: 18px;}
@@ -143,6 +143,7 @@ h2 { font-size: 35px; line-height: 45px; }
 .aul__request-top-box .aul__heading h2 {  font-size: 30px;  line-height: 40px;}
 .aul__header .navbar-toggler .icon-bar { width: 28px; height: 3px; }
 .aul__header .navbar-brand img { width: 200px;}
+.aul__footer-logo img { width: 200px;}
 .aul__btn { font-size: 13px; min-height: 40px; padding-inline: 20px;}
 .aul__generic-inner ul li{font-size: 15px;  line-height: 25px;}
 /* .aul__path-single::before {  border-top: 25px solid transparent;  border-left: 20px solid var(--clr-white); border-bottom: 25px solid transparent;}
@@ -248,6 +249,7 @@ h2 {  font-size: 22px;  line-height: 32px; }
 .aul__btn { font-size: 12px;  min-height: 35px; padding-inline: 15px;}
 .aul__header .navbar-toggler .icon-bar { width: 25px; height: 3px;}
 .aul__header .navbar-brand img{width: 170px; height: 100%;  object-fit: contain;}
+.aul__footer-logo img{width: 170px; height: 100%;}
 .aul__header-right {  gap: 15px;}
 .aul__header .navbar-brand{margin-right: 0;}
 .aul__generic-content h6 {  font-size: 12px;line-height: 22px;margin: 5px 0;}

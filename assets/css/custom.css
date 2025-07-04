@@ -101,6 +101,11 @@ svg {
   display: block;
 }
 
+::selection {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+}
+
 /* Utility Classes */
 .container {
   max-width: 1655px;
@@ -458,6 +463,12 @@ textarea.form-control {
   transition: all 0.4s ease-in-out;
 }
 
+.aul__header .navbar-brand img {
+  width: 300px;
+  object-fit: contain;
+  height: 100%;
+}
+
 /** ----------------------------
 *      Section: Header End
 **  --------------------------*/
@@ -592,6 +603,18 @@ textarea.form-control {
 .aul__connect-wrap {
   padding: 0 inherit;
   padding-inline: 35px;
+}
+
+.aul__connect-left {
+  height: 100%;
+}
+
+.aul__connect-left .aul__img {
+  height: 100%;
+}
+
+.aul__connect-left .aul__img img {
+  height: 100%;
 }
 
 /** ----------------------------
@@ -776,14 +799,15 @@ textarea.form-control {
   width: 100%;
 }
 
+.aul__footer-logo img {
+  width: 300px;
+  object-fit: contain;
+  height: 100%;
+}
+
 .aul__generic-content a {
   color: var(--clr-white);
   font-weight: 600;
-}
-
-::selection {
-  background-color: var(--clr-secondary);
-  color: var(--clr-white);
 }
 
 /** ----------------------------
@@ -1124,6 +1148,10 @@ main {
   padding-bottom: 8px;
 }
 
+.aul__generic-inner p .aul__btn {
+  color: var(--clr-white);
+}
+
 /** ----------------------------
 *   Section: Generic content End  
 **  --------------------------*/
@@ -1179,20 +1207,24 @@ main {
   font-weight: 400;
   color: var(--clr-white);
 }
+
 .aul__breadcrumb .breadcrumb-item.active {
   color: var(--clr-white);
 }
-.aul__breadcrumb 
-.breadcrumb-item + .breadcrumb-item::before {
+
+.aul__breadcrumb .breadcrumb-item+.breadcrumb-item::before {
   color: var(--clr-white);
   content: "-";
 }
+
 .aul__inner-hero-content .aul__inner-heading h1 {
   color: var(--clr-white);
 }
+
 .aul__inner-hero-content .aul__inner-heading {
   margin-bottom: 20px;
 }
+
 /** ----------------------------
 *   Section: Generic pages End  
 **  --------------------------*/
